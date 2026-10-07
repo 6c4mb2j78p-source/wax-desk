@@ -1,41 +1,137 @@
-// Weekly card market snapshot for Card Ledger.
-// Source: Card Market Scout, week of 2026-10-05.
-// No card-ledger repo exists; written to wax-desk as the fallback data file.
-// Replaces the prior week's market rows.
+// Weekly stock and options research snapshot.
+// Source: Stock & Options Scout, week of 2026-10-07.
+// No card-ledger repo exists; written to 6c4mb2j78p-source/wax-desk as the fallback data file.
+// Replaces the prior week's data rows.
+// Prices and option quotes are as of 2026-10-02 (scout did not return a later refresh).
+// Research only, not advice. Option spreads can lose their full debit.
 
-export const marketWeek = "2026-10-05";
+export const marketWeek = "2026-10-07";
+export const asOf = "2026-10-02";
 
 export const marketRows = [
-  { card: "30th Celebration Elite Trainer Box (EN sealed)", type: "sealed", lastSoldPrice: 159.0, soldDate: "2026-10-04", source: "TCGPlayer", psa10Population: null, populationTrend: null, priceTrend6mo: "declining", notes: "eBay Oct 1 cluster 150-160; PC guide 159.50; soft from ~185 pre-launch and ~155 last week" },
-  { card: "30th Celebration Pokemon Center Elite Trainer Box (EN sealed)", type: "sealed", lastSoldPrice: 274.99, soldDate: "2026-10-05", source: "TCGPlayer", psa10Population: null, populationTrend: null, priceTrend6mo: "declining", notes: "eBay late Sep median ~300; sharp drop vs ~310 last week; fair ~275-300" },
-  { card: "30th Celebration Booster Bundle (EN sealed 6-pack)", type: "sealed", lastSoldPrice: 68.77, soldDate: "2026-10-04", source: "eBay", psa10Population: null, populationTrend: null, priceTrend6mo: "declining", notes: "TCGPlayer sale 74.90 same day; market ~70-74; down ~20% in 30d vs MSRP ~30" },
-  { card: "Prismatic Evolutions Elite Trainer Box (EN sealed)", type: "sealed", lastSoldPrice: 135.0, soldDate: "2026-10-03", source: "eBay", psa10Population: null, populationTrend: null, priceTrend6mo: "declining", notes: "TCGPlayer 137.99 Oct 2; PC guide 141.91; soft from ~150 late Sep" },
-  { card: "Prismatic Evolutions Pokemon Center Elite Trainer Box (EN sealed)", type: "sealed", lastSoldPrice: 399.99, soldDate: "2026-10-02", source: "eBay", psa10Population: null, populationTrend: null, priceTrend6mo: "declining", notes: "TCGPlayer 399 Oct 2; exclude PSA promo outliers; still ~6.8x MSRP" },
-  { card: "Prismatic Evolutions Booster Bundle (EN sealed)", type: "sealed", lastSoldPrice: 74.0, soldDate: "2026-10-01", source: "eBay", psa10Population: null, populationTrend: null, priceTrend6mo: "declining", notes: "PC guide 80; recent eBay 74-85; TCGPlayer 2x-lot ask 84.99" },
-  { card: "Prismatic Evolutions Super Premium Collection (EN sealed)", type: "sealed", lastSoldPrice: 246.0, soldDate: "2026-10-04", source: "eBay", psa10Population: null, populationTrend: null, priceTrend6mo: "declining", notes: "TCGPlayer 261 Oct 2; Oct 1 eBay 215-253; median ~240 vs MSRP 89.99" },
-  { card: "Prismatic Evolutions Booster Bundle Display Box (EN sealed)", type: "sealed", lastSoldPrice: 1549.95, soldDate: "2026-09-29", source: "eBay", psa10Population: null, populationTrend: null, priceTrend6mo: "flat", notes: "Prior sale 1125 on Sep 24; PC guide 1337; thin n~few/mo" },
-  { card: "OP-17 Worlds Strongest Warriors Booster Box (EN sealed)", type: "sealed", lastSoldPrice: 315.0, soldDate: "2026-10-01", source: "eBay", psa10Population: null, populationTrend: null, priceTrend6mo: "declining", notes: "Sealed clean wrap 314.88 same day; OPBoxIndex 28d median 337; down ~20% since Aug release" },
-  { card: "Magnificent Monsters Box MAMO (EN 1st Ed sealed tuck box)", type: "sealed", lastSoldPrice: 35.15, soldDate: "2026-10-03", source: "eBay", psa10Population: null, populationTrend: null, priceTrend6mo: "declining", notes: "Only 4 eBay comps logged; MSRP parity ~35-37; not a sealed investment" },
-  { card: "Evolving Skies Booster Box (EN sealed)", type: "sealed", lastSoldPrice: 2379.3, soldDate: "2026-10-01", source: "eBay", psa10Population: null, populationTrend: null, priceTrend6mo: "flat", notes: "TCGPlayer 2149.99 Oct 2; ignore 3999 outlier; ~5 sales/wk floor" },
-  { card: "Umbreon ex SIR 161/131 Prismatic Evolutions PSA 10", type: "single", lastSoldPrice: 5399.0, soldDate: "2026-10-01", source: "eBay", psa10Population: 6578, populationTrend: "rising", priceTrend6mo: "flat", notes: "Same-day cluster 5050-5450; Folio 7d median ~4931; pop up from ~5487 last week" },
-  { card: "Charizard ex SIR 199/165 SV151 PSA 10", type: "single", lastSoldPrice: 1449.99, soldDate: "2026-10-04", source: "eBay", psa10Population: 28724, populationTrend: "rising", priceTrend6mo: "declining", notes: "Oct 1 sales 1250-1400; median still ~1375; pop up from ~27631" },
-  { card: "Mega Gengar ex SIR 284/217 Ascended Heroes PSA 10", type: "single", lastSoldPrice: 1779.99, soldDate: "2026-10-01", source: "eBay", psa10Population: 9732, populationTrend: "rising", priceTrend6mo: "declining", notes: "Sep 28-29 cluster 1758-1925; ignore 2500 outliers; pop up from ~8434" },
-  { card: "Mega Charizard X ex SIR 125/094 Phantasmal Flames PSA 10", type: "single", lastSoldPrice: 1550.0, soldDate: "2026-10-01", source: "eBay", psa10Population: 33184, populationTrend: "rising", priceTrend6mo: "declining", notes: "Oct 1 six sales 1450-1580; very liquid; pop up from ~28534; oversupplied" },
-  { card: "Cooper Flagg 2025-26 Topps Chrome 251 PSA 10", type: "single", lastSoldPrice: 297.99, soldDate: "2026-09-29", source: "eBay", psa10Population: 4777, populationTrend: null, priceTrend6mo: "flat", notes: "Sep 26-28 sales 295-320; liquid; pop from Card Ladder prior ~4777" },
-  { card: "Victor Wembanyama 2023-24 Prizm 136 PSA 10", type: "single", lastSoldPrice: 375.0, soldDate: "2026-10-04", source: "eBay", psa10Population: 27754, populationTrend: null, priceTrend6mo: "flat", notes: "Oct 4 also 356 and 399; late Sep median ~350; huge pop caps upside" },
-  { card: "Lilo and Stitch Fun-Loving Friends Iconic 244 AOTV raw NM", type: "single", lastSoldPrice: 984.0, soldDate: "2026-09-29", source: "eBay", psa10Population: null, populationTrend: null, priceTrend6mo: "declining", notes: "Same-day 1180; Sep 28 1150; down ~40% since Jul release; thin Lorcana" },
-  { card: "Umbreon Holo H30 Skyridge PSA 10", type: "single", lastSoldPrice: 65000.0, soldDate: "2026-09-13", source: "eBay", psa10Population: 129, populationTrend: null, priceTrend6mo: "appreciating", notes: "Same-day 100000 outlier; prior May-Jun 40k-51k; thin vintage" },
-  { card: "Espeon ex 070/128 30th Celebration raw NM", type: "single", lastSoldPrice: 4.99, soldDate: "2026-10-03", source: "eBay", psa10Population: null, populationTrend: null, priceTrend6mo: "declining", notes: "TCGPlayer 0.84 Oct 4 low; bulk Double Rare; ~300 sales/wk; graded none sold" },
-  { card: "Espeon ex 043/040 JP Premium Deck full art raw", type: "single", lastSoldPrice: 43.79, soldDate: "2026-10-04", source: "eBay", psa10Population: null, populationTrend: null, priceTrend6mo: "declining", notes: "Oct 1 eBay median ~53; down ~55% from mid-Sep ~119" },
-  { card: "Yveltal 100/128 30th Celebration raw NM", type: "single", lastSoldPrice: 0.15, soldDate: "2026-10-04", source: "TCGPlayer", psa10Population: null, populationTrend: null, priceTrend6mo: "declining", notes: "eBay Oct 1 median ~1.49 shipping floor; bulk Rare; no graded sales" },
-  { card: "Pikachu 040/128 (18/30) 30th Celebration raw NM", type: "single", lastSoldPrice: 3.95, soldDate: "2026-10-04", source: "eBay", psa10Population: null, populationTrend: null, priceTrend6mo: "declining", notes: "Chase of 30 Pikachu rares; TCGPlayer 2.01 Oct 4; fallen from launch ~73" },
-  { card: "Magcargo ex EX Dragon 95/97 raw NM", type: "single", lastSoldPrice: 89.99, soldDate: "2026-10-01", source: "eBay", psa10Population: 124, populationTrend: "flat", priceTrend6mo: "flat", notes: "NM band ~80-91; PC ungraded 65 blends conditions; PSA10 pop ~flat" },
-  { card: "Magcargo ex EX Dragon 95/97 PSA 10", type: "single", lastSoldPrice: 1694.0, soldDate: "2026-06-14", source: "eBay", psa10Population: 124, populationTrend: "flat", priceTrend6mo: "appreciating", notes: "Fanatics 1380 on 2026-07-20 last auction print; thin 1 sale/90d on eBay table" },
-  { card: "Pikachu with Grey Felt Hat SVP 085 raw NM", type: "single", lastSoldPrice: 925.0, soldDate: "2026-10-05", source: "eBay", psa10Population: null, populationTrend: null, priceTrend6mo: "flat", notes: "TCGPlayer 965 Oct 2; sealed title; modest pullback from Aug ~1039 peak" },
-  { card: "Mega Darkrai ex MUR 118/081 Abyss Eye JP PSA 9", type: "single", lastSoldPrice: 202.5, soldDate: "2026-09-20", source: "eBay", psa10Population: null, populationTrend: "rising", priceTrend6mo: "declining", notes: "PC PSA9 table thin; prior Oct 2 print 192.50; PSA9 at/below raw ~215; pop ~595 rising fast" },
-  { card: "Giovanni's Gyarados Gym Challenge 5 1st Ed Holo PSA 8", type: "single", lastSoldPrice: 431.0, soldDate: "2026-09-16", source: "eBay", psa10Population: 200, populationTrend: "rising", priceTrend6mo: "appreciating", notes: "Fanatics Collect 460 on 2026-09-30 not in PC table; PSA8 pop ~684; up ~30% in 6mo" },
-  { card: "Monkey.D.Luffy Pirate Crew SP EB04-061 OP-17 raw", type: "single", lastSoldPrice: 12622.0, soldDate: "2026-09-15", source: "eBay", psa10Population: null, populationTrend: null, priceTrend6mo: "declining", notes: "Only ~5 raw comps; prior Sep 21 9989 not in PC table this pull; falling from ~23k early Sep" },
-  { card: "2013 JP Pokemon X/Y Trump Braixen 7 of Hearts CGC 10 (cert 6086995155)", type: "single", lastSoldPrice: null, soldDate: null, source: "Fanatics Collect", psa10Population: null, populationTrend: null, priceTrend6mo: null, notes: "No sale of this card; nearest comps CGC 10 X-deck Charmeleon 16.80 and Eevee 38.40 on 2024-09-30" }
+  {
+    ticker: "AVGO",
+    type: "STOCK",
+    price: "$352.85 (Oct 2)",
+    quantMetrics: "Mkt cap $1.68T; P/E 43.9 trailing / 19.8 fwd; PEG 0.36; rev +48.7%; FCF margin 44%",
+    analystRating: "Strong Buy (50); avg target $531.85",
+    earningsDate: "Dec 9, 2026",
+    thesis: "AI custom chips and networking; 29% below its high",
+    risk: "Valuation; few big customers; China",
+    allocationSuggestion: "Growth satellite; fractional shares in weekly tranches"
+  },
+  {
+    ticker: "V",
+    type: "STOCK",
+    price: "$360.96 (Oct 2)",
+    quantMetrics: "Mkt cap $663B; P/E 30.6 / 24.9 fwd; rev +14.4%; op margin 66.9%",
+    analystRating: "Strong Buy (40); avg target $419.36",
+    earningsDate: "Oct 27, 2026",
+    thesis: "Low-volatility quality compounder with buybacks",
+    risk: "Premium multiple; legal and regulatory risk",
+    allocationSuggestion: "Core holding; steady weekly buys"
+  },
+  {
+    ticker: "GOOGL",
+    type: "STOCK",
+    price: "$343.50 (Oct 2)",
+    quantMetrics: "Mkt cap $4.2T; P/E 17.0 / 25.2 fwd; rev +20.1%; net cash about $122B",
+    analystRating: "Strong Buy (61); avg target $429.36",
+    earningsDate: "about Oct 28, 2026 (estimate)",
+    thesis: "AI, cloud and search leader, 16% below its high",
+    risk: "Capex squeezing cash flow; antitrust",
+    allocationSuggestion: "Core holding; split buys around earnings"
+  },
+  {
+    ticker: "LLY",
+    type: "STOCK",
+    price: "$1,140.38 (Oct 2)",
+    quantMetrics: "Mkt cap $1.02T; P/E 38.6 / 27.6 fwd; rev +49.6%; op margin 49.7%",
+    analystRating: "Buy (30); avg target $1,328.83",
+    earningsDate: "Oct 29, 2026",
+    thesis: "Obesity drug leader with strong pipeline",
+    risk: "Valuation; pricing and policy pressure",
+    allocationSuggestion: "Core growth, smaller weight"
+  },
+  {
+    ticker: "ABT",
+    type: "STOCK",
+    price: "$97.31 (Oct 2)",
+    quantMetrics: "Mkt cap $168B; P/E 31.3 / 16.7 fwd; rev +8.1%; yield 2.6%",
+    analystRating: "Buy (27); avg target $120.26",
+    earningsDate: "Oct 21, 2026",
+    thesis: "Oversold dividend healthcare name at a low multiple",
+    risk: "Acquisition integration; weak segments",
+    allocationSuggestion: "Value and income slice; add after Oct 21"
+  },
+  {
+    ticker: "UBER",
+    type: "STOCK",
+    price: "$68.04 (Oct 2)",
+    quantMetrics: "Mkt cap $139B; P/E 16.6 fwd; PEG 0.61; FCF yield 7.3%",
+    analystRating: "Buy (51); avg target $100.77",
+    earningsDate: "about Nov 3, 2026 (estimate)",
+    thesis: "Cash-generative, priced for a robotaxi threat",
+    risk: "Robotaxi competition; no price floor yet",
+    allocationSuggestion: "Small contrarian slice"
+  },
+  {
+    ticker: "ABT 2026-11-20 95/105 call debit spread",
+    type: "OPTION",
+    price: "Stock $97.31; debit 4.10 (Oct 2)",
+    quantMetrics: "Cost $410; max loss $410 / max gain $590; IV about 30%; OI 979 / 1,742; breakeven $99.10 (+1.8%)",
+    analystRating: "Buy; avg target $120.26",
+    earningsDate: "Oct 21, 2026 (inside the trade)",
+    thesis: "Lowest-risk idea; needs only a small rise",
+    risk: "Earnings drop can lose the full $410",
+    allocationSuggestion: "Small slice, one contract"
+  },
+  {
+    ticker: "V 2026-11-20 380/400 call debit spread",
+    type: "OPTION",
+    price: "Stock $360.96; debit 4.00 (Oct 2)",
+    quantMetrics: "Cost $400; max loss $400 / max gain $1,600; IV about 23%; OI 1,728 / 936; breakeven $384 (+6.4%)",
+    analystRating: "Strong Buy; avg target $419.36",
+    earningsDate: "Oct 27, 2026 (inside the trade)",
+    thesis: "Best 4-to-1 payoff at low volatility",
+    risk: "Needs a 6.4% rally; wider short-leg quote",
+    allocationSuggestion: "Small speculative slice, one contract"
+  },
+  {
+    ticker: "JPM 2026-11-20 345/365 call debit spread",
+    type: "OPTION",
+    price: "Stock $331.02; debit 4.63 (Oct 2)",
+    quantMetrics: "Cost $463; max loss $463 / max gain $1,537; IV about 24%; OI 2,147 / 1,388; breakeven $349.63 (+5.6%)",
+    analystRating: "Buy (24); avg target $375.81",
+    earningsDate: "Oct 13, 2026 (inside the trade)",
+    thesis: "Low-volatility bank with a payoff if it rises after earnings",
+    risk: "Full loss below $345",
+    allocationSuggestion: "Small slice, one contract"
+  },
+  {
+    ticker: "UBER 2026-11-20 70/80 call debit spread",
+    type: "OPTION",
+    price: "Stock $68.04; debit 2.45 (Oct 2)",
+    quantMetrics: "Cost $245; max loss $245 / max gain $755; IV about 40%; OI 5,828 / 6,655; breakeven $72.45 (+6.5%)",
+    analystRating: "Buy; avg target $100.77",
+    earningsDate: "about Nov 3, 2026 (inside the trade)",
+    thesis: "Cheapest ticket with very liquid options",
+    risk: "High volatility; earnings gap either way",
+    allocationSuggestion: "Small speculative slice"
+  }
 ];
 
-export const summary = "Appreciating or holding: Skyridge Umbreon H30 PSA 10, Umbreon ex 161 PSA 10 (flat near 5.3k), Giovanni's Gyarados 1st Ed PSA 8, Magcargo ex PSA 10 (thin), Evolving Skies box, Grey Felt Hat raw (cooled but elevated). Oversupplied/falling: modern SIR PSA 10s (Mega Charizard X pop 33k, Mega Gengar pop 9.7k, Charizard 199 pop 28.7k), all 30th Celebration and Prismatic sealed products, OP-17 box, Magnificent Monsters box (MSRP), Mega Darkrai PSA 9, Luffy EB04-061, Lilo Iconic 244, and 30th singles (Espeon/Yveltal/Pikachu 040) still post-launch dumping.";
+export const pipeReport = [
+  "AVGO / STOCK / $352.85 (Oct 2) / Mkt cap $1.68T; P/E 43.9 trailing / 19.8 fwd; PEG 0.36; rev +48.7%; FCF margin 44% / Strong Buy (50); avg target $531.85 / Dec 9, 2026 / AI custom chips and networking; 29% below its high / Valuation; few big customers; China / Growth satellite; fractional shares in weekly tranches",
+  "V / STOCK / $360.96 (Oct 2) / Mkt cap $663B; P/E 30.6 / 24.9 fwd; rev +14.4%; op margin 66.9% / Strong Buy (40); avg target $419.36 / Oct 27, 2026 / Low-volatility quality compounder with buybacks / Premium multiple; legal and regulatory risk / Core holding; steady weekly buys",
+  "GOOGL / STOCK / $343.50 (Oct 2) / Mkt cap $4.2T; P/E 17.0 / 25.2 fwd; rev +20.1%; net cash about $122B / Strong Buy (61); avg target $429.36 / about Oct 28, 2026 (estimate) / AI, cloud and search leader, 16% below its high / Capex squeezing cash flow; antitrust / Core holding; split buys around earnings",
+  "LLY / STOCK / $1,140.38 (Oct 2) / Mkt cap $1.02T; P/E 38.6 / 27.6 fwd; rev +49.6%; op margin 49.7% / Buy (30); avg target $1,328.83 / Oct 29, 2026 / Obesity drug leader with strong pipeline / Valuation; pricing and policy pressure / Core growth, smaller weight",
+  "ABT / STOCK / $97.31 (Oct 2) / Mkt cap $168B; P/E 31.3 / 16.7 fwd; rev +8.1%; yield 2.6% / Buy (27); avg target $120.26 / Oct 21, 2026 / Oversold dividend healthcare name at a low multiple / Acquisition integration; weak segments / Value and income slice; add after Oct 21",
+  "UBER / STOCK / $68.04 (Oct 2) / Mkt cap $139B; P/E 16.6 fwd; PEG 0.61; FCF yield 7.3% / Buy (51); avg target $100.77 / about Nov 3, 2026 (estimate) / Cash-generative, priced for a robotaxi threat / Robotaxi competition; no price floor yet / Small contrarian slice",
+  "ABT 2026-11-20 95/105 call debit spread / OPTION / Stock $97.31; debit 4.10 (Oct 2) / Cost $410; max loss $410 / max gain $590; IV about 30%; OI 979 / 1,742; breakeven $99.10 (+1.8%) / Buy; avg target $120.26 / Oct 21, 2026 (inside the trade) / Lowest-risk idea; needs only a small rise / Earnings drop can lose the full $410 / Small slice, one contract",
+  "V 2026-11-20 380/400 call debit spread / OPTION / Stock $360.96; debit 4.00 (Oct 2) / Cost $400; max loss $400 / max gain $1,600; IV about 23%; OI 1,728 / 936; breakeven $384 (+6.4%) / Strong Buy; avg target $419.36 / Oct 27, 2026 (inside the trade) / Best 4-to-1 payoff at low volatility / Needs a 6.4% rally; wider short-leg quote / Small speculative slice, one contract",
+  "JPM 2026-11-20 345/365 call debit spread / OPTION / Stock $331.02; debit 4.63 (Oct 2) / Cost $463; max loss $463 / max gain $1,537; IV about 24%; OI 2,147 / 1,388; breakeven $349.63 (+5.6%) / Buy (24); avg target $375.81 / Oct 13, 2026 (inside the trade) / Low-volatility bank with a payoff if it rises after earnings / Full loss below $345 / Small slice, one contract",
+  "UBER 2026-11-20 70/80 call debit spread / OPTION / Stock $68.04; debit 2.45 (Oct 2) / Cost $245; max loss $245 / max gain $755; IV about 40%; OI 5,828 / 6,655; breakeven $72.45 (+6.5%) / Buy; avg target $100.77 / about Nov 3, 2026 (inside the trade) / Cheapest ticket with very liquid options / High volatility; earnings gap either way / Small speculative slice"
+];
+
+export const summary = "Strongest stock candidates: V and GOOGL as core compounders (Strong Buy, targets $419 and $429), with AVGO the highest-upside satellite (target $531.85, earnings Dec 9) and ABT the value/income name. Riskiest options: UBER Nov 20 70/80 call spread (about 40% IV, earnings inside the trade, full $245 at risk) and the V 380/400 spread (needs a 6.4% rally; JPM 345/365 also loses the full debit below $345). Quotes are Oct 2; re-check live chains before any order.";
