@@ -1,137 +1,137 @@
 // Weekly stock and options research snapshot.
-// Source: Stock & Options Scout, week of 2026-10-07.
+// Source: Stock & Options Scout, week of 2026-10-14.
 // No card-ledger repo exists; written to 6c4mb2j78p-source/wax-desk as the fallback data file.
 // Replaces the prior week's data rows.
-// Prices and option quotes are as of 2026-10-02 (scout did not return a later refresh).
+// Prices and option quotes are as of 2026-10-13 close (last trades; bid/ask not available pre-market).
 // Research only, not advice. Option spreads can lose their full debit.
 
-export const marketWeek = "2026-10-07";
-export const asOf = "2026-10-02";
+export const marketWeek = "2026-10-14";
+export const asOf = "2026-10-13";
 
 export const marketRows = [
   {
-    ticker: "AVGO",
-    type: "STOCK",
-    price: "$352.85 (Oct 2)",
-    quantMetrics: "Mkt cap $1.68T; P/E 43.9 trailing / 19.8 fwd; PEG 0.36; rev +48.7%; FCF margin 44%",
-    analystRating: "Strong Buy (50); avg target $531.85",
-    earningsDate: "Dec 9, 2026",
-    thesis: "AI custom chips and networking; 29% below its high",
-    risk: "Valuation; few big customers; China",
-    allocationSuggestion: "Growth satellite; fractional shares in weekly tranches"
-  },
-  {
-    ticker: "V",
-    type: "STOCK",
-    price: "$360.96 (Oct 2)",
-    quantMetrics: "Mkt cap $663B; P/E 30.6 / 24.9 fwd; rev +14.4%; op margin 66.9%",
-    analystRating: "Strong Buy (40); avg target $419.36",
-    earningsDate: "Oct 27, 2026",
-    thesis: "Low-volatility quality compounder with buybacks",
-    risk: "Premium multiple; legal and regulatory risk",
-    allocationSuggestion: "Core holding; steady weekly buys"
-  },
-  {
     ticker: "GOOGL",
     type: "STOCK",
-    price: "$343.50 (Oct 2)",
-    quantMetrics: "Mkt cap $4.2T; P/E 17.0 / 25.2 fwd; rev +20.1%; net cash about $122B",
-    analystRating: "Strong Buy (61); avg target $429.36",
-    earningsDate: "about Oct 28, 2026 (estimate)",
-    thesis: "AI, cloud and search leader, 16% below its high",
-    risk: "Capex squeezing cash flow; antitrust",
-    allocationSuggestion: "Core holding; split buys around earnings"
+    price: "$353.78 (Oct 13 close)",
+    quantMetrics: "PE 17.75; fwd PE 26.26; FY26 rev est +23.9%; 52w 239.71-408.61",
+    analystRating: "Strong Buy; 62 analysts (44 SB/13 Buy/5 Hold); avg PT $430.40 (+21.7%)",
+    earningsDate: "2026-10-28 (confirmed)",
+    thesis: "Lowest trailing PE of the group with ~24% revenue growth est and 21.7% to avg PT",
+    risk: "Earnings Oct 28 in 2 weeks; AI capex/regulatory headlines",
+    allocationSuggestion: "Core holding; buy in weekly tranches, consider waiting past Oct 28"
   },
   {
-    ticker: "LLY",
+    ticker: "AVGO",
     type: "STOCK",
-    price: "$1,140.38 (Oct 2)",
-    quantMetrics: "Mkt cap $1.02T; P/E 38.6 / 27.6 fwd; rev +49.6%; op margin 49.7%",
-    analystRating: "Buy (30); avg target $1,328.83",
-    earningsDate: "Oct 29, 2026",
-    thesis: "Obesity drug leader with strong pipeline",
-    risk: "Valuation; pricing and policy pressure",
-    allocationSuggestion: "Core growth, smaller weight"
-  },
-  {
-    ticker: "ABT",
-    type: "STOCK",
-    price: "$97.31 (Oct 2)",
-    quantMetrics: "Mkt cap $168B; P/E 31.3 / 16.7 fwd; rev +8.1%; yield 2.6%",
-    analystRating: "Buy (27); avg target $120.26",
-    earningsDate: "Oct 21, 2026",
-    thesis: "Oversold dividend healthcare name at a low multiple",
-    risk: "Acquisition integration; weak segments",
-    allocationSuggestion: "Value and income slice; add after Oct 21"
+    price: "$357.31 (Oct 13 close)",
+    quantMetrics: "PE 45.61; fwd PE 20.62; FY26 rev est +65.9%; beta 1.48; 52w 289.96-495.00",
+    analystRating: "Strong Buy; 50 analysts (40 SB/7 Buy/3 Hold); avg PT $527.59 (+47.7%)",
+    earningsDate: "unknown (next date not announced; last reported 2026-09-02)",
+    thesis: "Largest upside to avg PT; custom AI chip demand; fwd PE ~21",
+    risk: "High beta; reported $50B+ AI financing plans; ~28% below 52w high",
+    allocationSuggestion: "Core holding, small weekly tranches"
   },
   {
     ticker: "UBER",
     type: "STOCK",
-    price: "$68.04 (Oct 2)",
-    quantMetrics: "Mkt cap $139B; P/E 16.6 fwd; PEG 0.61; FCF yield 7.3%",
-    analystRating: "Buy (51); avg target $100.77",
-    earningsDate: "about Nov 3, 2026 (estimate)",
-    thesis: "Cash-generative, priced for a robotaxi threat",
-    risk: "Robotaxi competition; no price floor yet",
-    allocationSuggestion: "Small contrarian slice"
+    price: "$71.32 (Oct 13 close)",
+    quantMetrics: "PE 15.56; fwd PE 17.66; FY26 EPS est +37%; 52w 65.41-100.35",
+    analystRating: "Buy; 50 analysts (32 SB/9 Buy/8 Hold/1 Strong Sell); avg PT $100.86 (+41.4%)",
+    earningsDate: "2026-11-04 (confirmed)",
+    thesis: "Cheap vs growth, 41% to avg PT, near 52w low",
+    risk: "Robotaxi competition; pending Delivery Hero bid; litigation",
+    allocationSuggestion: "Tranche; small weekly buys"
   },
   {
-    ticker: "ABT 2026-11-20 95/105 call debit spread",
-    type: "OPTION",
-    price: "Stock $97.31; debit 4.10 (Oct 2)",
-    quantMetrics: "Cost $410; max loss $410 / max gain $590; IV about 30%; OI 979 / 1,742; breakeven $99.10 (+1.8%)",
-    analystRating: "Buy; avg target $120.26",
-    earningsDate: "Oct 21, 2026 (inside the trade)",
-    thesis: "Lowest-risk idea; needs only a small rise",
-    risk: "Earnings drop can lose the full $410",
-    allocationSuggestion: "Small slice, one contract"
+    ticker: "ABT",
+    type: "STOCK",
+    price: "$102.61 (Oct 13 close)",
+    quantMetrics: "PE 33.20; fwd PE 17.71; div yield 2.46%; beta 0.58; 52w 81.97-133.34",
+    analystRating: "Strong Buy; 28 analysts (19 SB/5 Buy/4 Hold); avg PT $120.72 (+17.7%)",
+    earningsDate: "2026-10-21 (confirmed); ex-div 2026-10-15",
+    thesis: "Defensive dividend payer at ~18x fwd earnings, upgrades trending up",
+    risk: "Earnings Oct 21 within a week; trailing EPS -61% YoY",
+    allocationSuggestion: "Core defensive holding; tranche"
   },
   {
-    ticker: "V 2026-11-20 380/400 call debit spread",
-    type: "OPTION",
-    price: "Stock $360.96; debit 4.00 (Oct 2)",
-    quantMetrics: "Cost $400; max loss $400 / max gain $1,600; IV about 23%; OI 1,728 / 936; breakeven $384 (+6.4%)",
-    analystRating: "Strong Buy; avg target $419.36",
-    earningsDate: "Oct 27, 2026 (inside the trade)",
-    thesis: "Best 4-to-1 payoff at low volatility",
-    risk: "Needs a 6.4% rally; wider short-leg quote",
-    allocationSuggestion: "Small speculative slice, one contract"
+    ticker: "LLY",
+    type: "STOCK",
+    price: "$1,166.51 (Oct 13 close)",
+    quantMetrics: "PE 39.16; fwd PE 29.86; FY26 rev est +35.9%; beta 0.45",
+    analystRating: "Buy; 30 analysts (19 SB/6 Buy/3 Hold/1 Sell/1 Strong Sell); avg PT $1,330.14 (+14.0%)",
+    earningsDate: "2026-10-29 (confirmed)",
+    thesis: "Obesity-drug growth leader with ~36% revenue growth est",
+    risk: "Earnings Oct 29; drug-pricing policy; high share price (fractional shares)",
+    allocationSuggestion: "Small tranche via fractional shares"
   },
   {
-    ticker: "JPM 2026-11-20 345/365 call debit spread",
-    type: "OPTION",
-    price: "Stock $331.02; debit 4.63 (Oct 2)",
-    quantMetrics: "Cost $463; max loss $463 / max gain $1,537; IV about 24%; OI 2,147 / 1,388; breakeven $349.63 (+5.6%)",
-    analystRating: "Buy (24); avg target $375.81",
-    earningsDate: "Oct 13, 2026 (inside the trade)",
-    thesis: "Low-volatility bank with a payoff if it rises after earnings",
-    risk: "Full loss below $345",
-    allocationSuggestion: "Small slice, one contract"
+    ticker: "V",
+    type: "STOCK",
+    price: "$396.06 (Oct 13 close; at 52w high 396.35)",
+    quantMetrics: "PE 33.72; fwd PE 27.42; beta 0.77; div yield 0.68%",
+    analystRating: "Strong Buy; 40 analysts (27 SB/9 Buy/3 Hold/1 Sell); avg PT $420.47 (+6.2%)",
+    earningsDate: "2026-10-27 (confirmed)",
+    thesis: "Quality compounder, low beta",
+    risk: "Only ~6% to avg PT after run to 52w high; earnings Oct 27",
+    allocationSuggestion: "Small tranche only; wait for pullback"
   },
   {
-    ticker: "UBER 2026-11-20 70/80 call debit spread",
+    ticker: "GOOGL 2026-11-20 380C/400C spread",
     type: "OPTION",
-    price: "Stock $68.04; debit 2.45 (Oct 2)",
-    quantMetrics: "Cost $245; max loss $245 / max gain $755; IV about 40%; OI 5,828 / 6,655; breakeven $72.45 (+6.5%)",
-    analystRating: "Buy; avg target $100.77",
-    earningsDate: "about Nov 3, 2026 (inside the trade)",
-    thesis: "Cheapest ticket with very liquid options",
-    risk: "High volatility; earnings gap either way",
-    allocationSuggestion: "Small speculative slice"
+    price: "Net debit ~$3.73 ($373/contract) from Oct 13 last trades (380C 7.03, 400C 3.30); bid/ask not available pre-market",
+    quantMetrics: "Max loss $373; max gain $1,627; breakeven $383.73 (+8.5% vs $353.78); 380C vol 10,081",
+    analystRating: "Underlying Strong Buy; avg PT $430.40",
+    earningsDate: "2026-10-28 (confirmed) - SPANS EARNINGS",
+    thesis: "Defined-risk bet GOOGL rallies past $384 after Oct 28 earnings",
+    risk: "Needs +8.5% in 5 weeks; earnings gap can go either way; most retail options traders lose money",
+    allocationSuggestion: "Small speculative slice (entertainment money)"
+  },
+  {
+    ticker: "UBER 2026-11-20 72.5C/80C spread",
+    type: "OPTION",
+    price: "Net debit ~$2.26 ($226/contract) from Oct 13 last trades (72.5C 3.40, 80C 1.14); bid/ask not available pre-market",
+    quantMetrics: "Max loss $226; max gain $524; breakeven $74.76 (+4.8% vs $71.32); 80C vol 607",
+    analystRating: "Underlying Buy; avg PT $100.86",
+    earningsDate: "2026-11-04 (confirmed) - SPANS EARNINGS",
+    thesis: "Low-cost rebound play near 52w low into Nov 4 earnings",
+    risk: "Earnings binary; robotaxi headlines; most retail options traders lose money",
+    allocationSuggestion: "Small speculative slice (entertainment money)"
+  },
+  {
+    ticker: "ABT 2026-11-20 105C/110C spread",
+    type: "OPTION",
+    price: "Net debit ~$1.65 ($165/contract) from Oct 13 last trades (105C 3.15, 110C 1.50); bid/ask not available pre-market",
+    quantMetrics: "Max loss $165; max gain $335; breakeven $106.65 (+3.9% vs $102.61); 105C vol 416",
+    analystRating: "Underlying Strong Buy; avg PT $120.72",
+    earningsDate: "2026-10-21 (confirmed) - SPANS EARNINGS; ex-div Oct 15",
+    thesis: "Cheapest defined-risk play on a defensive name into Oct 21 earnings",
+    risk: "Earnings in 1 week; ex-div drop ~$0.63; most retail options traders lose money",
+    allocationSuggestion: "Small speculative slice (entertainment money)"
+  },
+  {
+    ticker: "AVGO 2026-11-20 400C/420C spread",
+    type: "OPTION",
+    price: "Net debit ~$2.37 ($237/contract) from Oct 13 last trades (400C 5.10, 420C 2.73); bid/ask not available pre-market",
+    quantMetrics: "Max loss $237; max gain $1,763; breakeven $402.37 (+12.6% vs $357.31); 420C vol 8,380",
+    analystRating: "Underlying Strong Buy; avg PT $527.59",
+    earningsDate: "unknown (next date not announced; not expected before Nov 20 but UNVERIFIED)",
+    thesis: "Lottery-style upside on AI chip momentum",
+    risk: "Needs +12.6% in 5 weeks; high beta; most likely to expire worthless; most retail options traders lose money",
+    allocationSuggestion: "Smallest speculative slice (entertainment money)"
   }
 ];
 
 export const pipeReport = [
-  "AVGO / STOCK / $352.85 (Oct 2) / Mkt cap $1.68T; P/E 43.9 trailing / 19.8 fwd; PEG 0.36; rev +48.7%; FCF margin 44% / Strong Buy (50); avg target $531.85 / Dec 9, 2026 / AI custom chips and networking; 29% below its high / Valuation; few big customers; China / Growth satellite; fractional shares in weekly tranches",
-  "V / STOCK / $360.96 (Oct 2) / Mkt cap $663B; P/E 30.6 / 24.9 fwd; rev +14.4%; op margin 66.9% / Strong Buy (40); avg target $419.36 / Oct 27, 2026 / Low-volatility quality compounder with buybacks / Premium multiple; legal and regulatory risk / Core holding; steady weekly buys",
-  "GOOGL / STOCK / $343.50 (Oct 2) / Mkt cap $4.2T; P/E 17.0 / 25.2 fwd; rev +20.1%; net cash about $122B / Strong Buy (61); avg target $429.36 / about Oct 28, 2026 (estimate) / AI, cloud and search leader, 16% below its high / Capex squeezing cash flow; antitrust / Core holding; split buys around earnings",
-  "LLY / STOCK / $1,140.38 (Oct 2) / Mkt cap $1.02T; P/E 38.6 / 27.6 fwd; rev +49.6%; op margin 49.7% / Buy (30); avg target $1,328.83 / Oct 29, 2026 / Obesity drug leader with strong pipeline / Valuation; pricing and policy pressure / Core growth, smaller weight",
-  "ABT / STOCK / $97.31 (Oct 2) / Mkt cap $168B; P/E 31.3 / 16.7 fwd; rev +8.1%; yield 2.6% / Buy (27); avg target $120.26 / Oct 21, 2026 / Oversold dividend healthcare name at a low multiple / Acquisition integration; weak segments / Value and income slice; add after Oct 21",
-  "UBER / STOCK / $68.04 (Oct 2) / Mkt cap $139B; P/E 16.6 fwd; PEG 0.61; FCF yield 7.3% / Buy (51); avg target $100.77 / about Nov 3, 2026 (estimate) / Cash-generative, priced for a robotaxi threat / Robotaxi competition; no price floor yet / Small contrarian slice",
-  "ABT 2026-11-20 95/105 call debit spread / OPTION / Stock $97.31; debit 4.10 (Oct 2) / Cost $410; max loss $410 / max gain $590; IV about 30%; OI 979 / 1,742; breakeven $99.10 (+1.8%) / Buy; avg target $120.26 / Oct 21, 2026 (inside the trade) / Lowest-risk idea; needs only a small rise / Earnings drop can lose the full $410 / Small slice, one contract",
-  "V 2026-11-20 380/400 call debit spread / OPTION / Stock $360.96; debit 4.00 (Oct 2) / Cost $400; max loss $400 / max gain $1,600; IV about 23%; OI 1,728 / 936; breakeven $384 (+6.4%) / Strong Buy; avg target $419.36 / Oct 27, 2026 (inside the trade) / Best 4-to-1 payoff at low volatility / Needs a 6.4% rally; wider short-leg quote / Small speculative slice, one contract",
-  "JPM 2026-11-20 345/365 call debit spread / OPTION / Stock $331.02; debit 4.63 (Oct 2) / Cost $463; max loss $463 / max gain $1,537; IV about 24%; OI 2,147 / 1,388; breakeven $349.63 (+5.6%) / Buy (24); avg target $375.81 / Oct 13, 2026 (inside the trade) / Low-volatility bank with a payoff if it rises after earnings / Full loss below $345 / Small slice, one contract",
-  "UBER 2026-11-20 70/80 call debit spread / OPTION / Stock $68.04; debit 2.45 (Oct 2) / Cost $245; max loss $245 / max gain $755; IV about 40%; OI 5,828 / 6,655; breakeven $72.45 (+6.5%) / Buy; avg target $100.77 / about Nov 3, 2026 (inside the trade) / Cheapest ticket with very liquid options / High volatility; earnings gap either way / Small speculative slice"
+  "GOOGL / STOCK / $353.78 (Oct 13 close) / PE 17.75; fwd PE 26.26; FY26 rev est +23.9%; 52w 239.71-408.61 / Strong Buy; 62 analysts (44 SB/13 Buy/5 Hold); avg PT $430.40 (+21.7%) / 2026-10-28 (confirmed) / Lowest trailing PE of the group with ~24% revenue growth est and 21.7% to avg PT / Earnings Oct 28 in 2 weeks; AI capex/regulatory headlines / Core holding; buy in weekly tranches, consider waiting past Oct 28",
+  "AVGO / STOCK / $357.31 (Oct 13 close) / PE 45.61; fwd PE 20.62; FY26 rev est +65.9%; beta 1.48; 52w 289.96-495.00 / Strong Buy; 50 analysts (40 SB/7 Buy/3 Hold); avg PT $527.59 (+47.7%) / unknown (next date not announced; last reported 2026-09-02) / Largest upside to avg PT; custom AI chip demand; fwd PE ~21 / High beta; reported $50B+ AI financing plans; ~28% below 52w high / Core holding, small weekly tranches",
+  "UBER / STOCK / $71.32 (Oct 13 close) / PE 15.56; fwd PE 17.66; FY26 EPS est +37%; 52w 65.41-100.35 / Buy; 50 analysts (32 SB/9 Buy/8 Hold/1 Strong Sell); avg PT $100.86 (+41.4%) / 2026-11-04 (confirmed) / Cheap vs growth, 41% to avg PT, near 52w low / Robotaxi competition; pending Delivery Hero bid; litigation / Tranche; small weekly buys",
+  "ABT / STOCK / $102.61 (Oct 13 close) / PE 33.20; fwd PE 17.71; div yield 2.46%; beta 0.58; 52w 81.97-133.34 / Strong Buy; 28 analysts (19 SB/5 Buy/4 Hold); avg PT $120.72 (+17.7%) / 2026-10-21 (confirmed); ex-div 2026-10-15 / Defensive dividend payer at ~18x fwd earnings, upgrades trending up / Earnings Oct 21 within a week; trailing EPS -61% YoY / Core defensive holding; tranche",
+  "LLY / STOCK / $1,166.51 (Oct 13 close) / PE 39.16; fwd PE 29.86; FY26 rev est +35.9%; beta 0.45 / Buy; 30 analysts (19 SB/6 Buy/3 Hold/1 Sell/1 Strong Sell); avg PT $1,330.14 (+14.0%) / 2026-10-29 (confirmed) / Obesity-drug growth leader with ~36% revenue growth est / Earnings Oct 29; drug-pricing policy; high share price (fractional shares) / Small tranche via fractional shares",
+  "V / STOCK / $396.06 (Oct 13 close; at 52w high 396.35) / PE 33.72; fwd PE 27.42; beta 0.77; div yield 0.68% / Strong Buy; 40 analysts (27 SB/9 Buy/3 Hold/1 Sell); avg PT $420.47 (+6.2%) / 2026-10-27 (confirmed) / Quality compounder, low beta / Only ~6% to avg PT after run to 52w high; earnings Oct 27 / Small tranche only; wait for pullback",
+  "GOOGL 2026-11-20 380C/400C spread / OPTION / Net debit ~$3.73 ($373/contract) from Oct 13 last trades (380C 7.03, 400C 3.30); bid/ask not available pre-market / Max loss $373; max gain $1,627; breakeven $383.73 (+8.5% vs $353.78); 380C vol 10,081 / Underlying Strong Buy; avg PT $430.40 / 2026-10-28 (confirmed) - SPANS EARNINGS / Defined-risk bet GOOGL rallies past $384 after Oct 28 earnings / Needs +8.5% in 5 weeks; earnings gap can go either way; most retail options traders lose money / Small speculative slice (entertainment money)",
+  "UBER 2026-11-20 72.5C/80C spread / OPTION / Net debit ~$2.26 ($226/contract) from Oct 13 last trades (72.5C 3.40, 80C 1.14); bid/ask not available pre-market / Max loss $226; max gain $524; breakeven $74.76 (+4.8% vs $71.32); 80C vol 607 / Underlying Buy; avg PT $100.86 / 2026-11-04 (confirmed) - SPANS EARNINGS / Low-cost rebound play near 52w low into Nov 4 earnings / Earnings binary; robotaxi headlines; most retail options traders lose money / Small speculative slice (entertainment money)",
+  "ABT 2026-11-20 105C/110C spread / OPTION / Net debit ~$1.65 ($165/contract) from Oct 13 last trades (105C 3.15, 110C 1.50); bid/ask not available pre-market / Max loss $165; max gain $335; breakeven $106.65 (+3.9% vs $102.61); 105C vol 416 / Underlying Strong Buy; avg PT $120.72 / 2026-10-21 (confirmed) - SPANS EARNINGS; ex-div Oct 15 / Cheapest defined-risk play on a defensive name into Oct 21 earnings / Earnings in 1 week; ex-div drop ~$0.63; most retail options traders lose money / Small speculative slice (entertainment money)",
+  "AVGO 2026-11-20 400C/420C spread / OPTION / Net debit ~$2.37 ($237/contract) from Oct 13 last trades (400C 5.10, 420C 2.73); bid/ask not available pre-market / Max loss $237; max gain $1,763; breakeven $402.37 (+12.6% vs $357.31); 420C vol 8,380 / Underlying Strong Buy; avg PT $527.59 / unknown (next date not announced; not expected before Nov 20 but UNVERIFIED) / Lottery-style upside on AI chip momentum / Needs +12.6% in 5 weeks; high beta; most likely to expire worthless; most retail options traders lose money / Smallest speculative slice (entertainment money)"
 ];
 
-export const summary = "Strongest stock candidates: V and GOOGL as core compounders (Strong Buy, targets $419 and $429), with AVGO the highest-upside satellite (target $531.85, earnings Dec 9) and ABT the value/income name. Riskiest options: UBER Nov 20 70/80 call spread (about 40% IV, earnings inside the trade, full $245 at risk) and the V 380/400 spread (needs a 6.4% rally; JPM 345/365 also loses the full debit below $345). Quotes are Oct 2; re-check live chains before any order.";
+export const summary = "Strongest stock candidates: GOOGL (Strong Buy, avg PT $430.40, +21.7%, lowest PE), AVGO (Strong Buy, avg PT $527.59, +47.7%), and UBER (Buy, avg PT $100.86, +41.4%, near 52w low). Riskiest options trades: AVGO 2026-11-20 400C/420C spread (needs +12.6%, high beta, likely to expire worthless) and GOOGL 2026-11-20 380C/400C spread (spans earnings, needs +8.5%). Quotes from Oct 13 last trades; re-check live chains before any order. Research only, not advice.";
