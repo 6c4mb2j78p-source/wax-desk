@@ -1,449 +1,135 @@
-// Weekly card market research snapshot.
-// Source: Card Market Scout, week of 2026-10-19.
+// Weekly stock and options research snapshot.
+// Source: Stock & Options Scout, week of 2026-10-21.
 // No card-ledger repo exists; written to 6c4mb2j78p-source/wax-desk as the fallback data file.
-// Replaces the prior week's data rows.
-// Sold prices, comps, PSA 10 populations and 6-month trends as of latest verified sales (mostly 2026-10-14 to 2026-10-19).
-// Research only, not advice. Markets are thin and volatile; verify identical sales yourself.
+// Replaces the prior week's data.
+// Prices as of Oct 20, 2026 close. Option premiums from Oct 20 last trades (re-check bid/ask after open).
+// Research only, not advice. Verify live quotes and do your own due diligence.
 
-export const marketWeek = "2026-10-19";
-export const asOf = "2026-10-19";
+export const researchWeek = "2026-10-21";
+export const asOf = "2026-10-20";
 
-export const marketRows = [
+export const stockOptionsRows = [
   {
-    card: "Prismatic Evolutions Elite Trainer Box (EN, sealed)",
-    type: "sealed",
-    lastSoldPrice: "120.21",
-    soldDate: "2026-10-17",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "-25% (down)",
-    notes: "32 sales/30d, median 129.99 (119.99-145). Apr guide 171.65 to Oct 129.45. Supply: multiple reprints, Walmart drop at 69 on 10/7, Target/Amazon restocks. Drifting down."
+    ticker: "GOOGL",
+    type: "STOCK",
+    price: "$340.28 (Oct 20 close)",
+    quantMetrics: "PE 17.1; fwd PE 22.2; PEG 1.16; FY26 EPS est growth +23.3%; beta 1.21; 52w 249.29-408.61",
+    analystRating: "Strong Buy; 62 analysts (44 SB/13 Buy/5 Hold); avg PT $430.51 (+26.5%)",
+    earningsDate: "2026-10-28 AMC (confirmed)",
+    thesis: "Lowest PE in group with ~23% EPS growth est and ~27% to avg PT",
+    risk: "Earnings in 1 week; AI capex/regulatory headlines; -2.1% last week",
+    allocationSuggestion: "Core, ~25% of weekly budget; consider splitting before/after Oct 28"
   },
   {
-    card: "Prismatic Evolutions Pokémon Center ETB (EN, sealed)",
-    type: "sealed",
-    lastSoldPrice: "383.00",
-    soldDate: "2026-10-17",
-    source: "TCGplayer sale via PriceCharting",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "-24% (down)",
-    notes: "41 sales/30d, median 400 (335-425). Apr guide 525 to Oct 399.99. Flat since late Aug. PC exclusive, no restock news."
+    ticker: "AVGO",
+    type: "STOCK",
+    price: "$334.37 (Oct 20 close)",
+    quantMetrics: "PE 42.7; fwd PE 17.2; PEG 0.27; FY EPS est growth +70.9%; beta 1.48; 32% below 52w high 495.00",
+    analystRating: "Strong Buy; 50 analysts (40 SB/7 Buy/3 Hold); avg PT $527.59 (+57.8%)",
+    earningsDate: "2026-12-09 (Yahoo estimate; not yet confirmed by company)",
+    thesis: "Largest upside to avg PT; fwd PE ~17 on ~71% EPS growth est",
+    risk: "High beta; below 20/50/200-day SMAs (downtrend); -7.7% past month",
+    allocationSuggestion: "Core, ~20% of weekly budget in small tranches"
   },
   {
-    card: "Prismatic Evolutions Booster Bundle (EN, sealed)",
-    type: "sealed",
-    lastSoldPrice: "85.00",
-    soldDate: "2026-10-18",
-    source: "TCGplayer sale via PriceCharting",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "+19% (up)",
-    notes: "33 sales/30d, median 82. Apr guide 71.94 to Oct 85.25, but June sales 95-102, so soft since summer."
+    ticker: "UBER",
+    type: "STOCK",
+    price: "$68.94 (Oct 20 close)",
+    quantMetrics: "PE 15.1; fwd PE 15.6; FY26 EPS est growth +37%; beta 1.27; 5.9% above 52w low 65.41",
+    analystRating: "Buy; 50 analysts (32 SB/9 Buy/8 Hold/1 Strong Sell); avg PT $100.86 (+46.3%)",
+    earningsDate: "2026-11-04 BMO (confirmed)",
+    thesis: "Cheapest fwd PE in group; 46% to avg PT; near 52w low",
+    risk: "Robotaxi competition; below 50/200-day SMAs; earnings Nov 4",
+    allocationSuggestion: "Tranche, ~15% of weekly budget"
   },
   {
-    card: "Prismatic Evolutions Super Premium Collection (EN, sealed)",
-    type: "sealed",
-    lastSoldPrice: "254.81",
-    soldDate: "2026-10-17",
-    source: "TCGplayer sale via PriceCharting",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "-22% (down)",
-    notes: "34 sales/30d, median 240 (215-279.99). 15 US restocks in 30 days (last Amazon 10/18); Target 129.99 restock 10/1. Restocks capping price."
+    ticker: "ABT",
+    type: "STOCK",
+    price: "$102.45 (Oct 20 close)",
+    quantMetrics: "PE 33.0; fwd PE 16.9; div yield 2.46%; beta 0.58; FY EPS est growth +7.2%",
+    analystRating: "Strong Buy; 28 analysts (19 SB/5 Buy/4 Hold); avg PT $120.72 (+17.8%)",
+    earningsDate: "2026-10-21 BMO (confirmed; TODAY before the open)",
+    thesis: "Defensive dividend payer at ~17x fwd earnings; ratings trending up",
+    risk: "Reports today - price can gap at the open; trailing EPS -48% Q/Q",
+    allocationSuggestion: "Defensive, ~10% of weekly budget; wait to see earnings reaction"
   },
   {
-    card: "Prismatic Evolutions Booster Bundle Display Box (EN, sealed)",
-    type: "sealed",
-    lastSoldPrice: "1549.95",
-    soldDate: "2026-09-29",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "+14% (up, guide; thin)",
-    notes: "THIN: 2 sales/30d, 6 in 90d (1,075-1,560), none in October. April sales were 1,250-1,899, so actual sales are flat to down."
+    ticker: "LLY",
+    type: "STOCK",
+    price: "$1,283.66 (Oct 20 close)",
+    quantMetrics: "PE 43.1; fwd PE 27.2; PEG 0.88; FY EPS est growth +44.1%; beta 0.45; 2.1% below 52w high 1311.75",
+    analystRating: "Buy; 31 analysts (20 SB/6 Buy/3 Hold/1 Sell/1 Strong Sell); avg PT $1,328 (+3.5%)",
+    earningsDate: "2026-10-29 BMO (confirmed)",
+    thesis: "Obesity-drug growth leader; +9.3% past month",
+    risk: "Only ~3.5% to avg PT after the run; earnings Oct 29; drug-pricing policy",
+    allocationSuggestion: "Small, ~5% of weekly budget (fractional); wait for pullback"
   },
   {
-    card: "Umbreon ex SIR 161/131, Prismatic Evolutions, English, PSA 10",
-    type: "single",
-    lastSoldPrice: "4700.00",
-    soldDate: "2026-10-18",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "6566",
-    populationTrend: "rising",
-    priceTrend6mo: "-11% (down)",
-    notes: "27 sales since 10/1, median 4,965; softening mid-Oct (4,450-5,200). June peak 7,112.50. Pop up from 5,487."
+    ticker: "V",
+    type: "STOCK",
+    price: "$406.57 (Oct 20 close; near 52w high 408.59)",
+    quantMetrics: "PE 34.6; fwd PE 27.1; FY EPS est growth +15.4%; beta 0.77; div yield 0.66%",
+    analystRating: "Strong Buy; 40 analysts (27 SB/9 Buy/3 Hold/1 Sell); avg PT $422.77 (+4.0%)",
+    earningsDate: "2026-10-27 AMC (confirmed)",
+    thesis: "Quality low-beta compounder",
+    risk: "Only ~4% to avg PT at 52w high after +12% month; earnings Oct 27",
+    allocationSuggestion: "Small, ~5% of weekly budget; wait for pullback"
   },
   {
-    card: "Charizard ex SIR 199/165, Scarlet & Violet 151, English, PSA 10",
-    type: "single",
-    lastSoldPrice: "1224.00",
-    soldDate: "2026-10-18",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "28709",
-    populationTrend: "rising",
-    priceTrend6mo: "-23% (down)",
-    notes: "25 sales since 10/1, median 1,360. Huge and growing pop with falling price. OVERSUPPLIED."
+    ticker: "GOOGL 2026-11-20 360C/380C",
+    type: "OPTION - call debit spread",
+    price: "Net debit ~$4.30 ($430/contract) from Oct 20 last trades (360C 7.15, 380C 2.85); bid/ask unavailable pre-market",
+    quantMetrics: "Max loss $430; max gain $1,570; breakeven $364.30 (+7.1% vs $340.28); 360C vol 1,586, 380C vol 954",
+    analystRating: "Underlying Strong Buy; avg PT $430.51",
+    earningsDate: "2026-10-28 (confirmed) - SPANS EARNINGS",
+    thesis: "Defined-risk bet GOOGL recovers above $364 after Oct 28 earnings",
+    risk: "Needs +7.1% in 1 month; earnings gap either way; most retail options traders lose money - entertainment money only",
+    allocationSuggestion: "Small speculative slice, 1 contract max"
   },
   {
-    card: "Mega Gengar ex SIR 284/217, Ascended Heroes, English, PSA 10",
-    type: "single",
-    lastSoldPrice: "1579.00",
-    soldDate: "2026-10-18",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "9680",
-    populationTrend: "rising",
-    priceTrend6mo: "-61% (down)",
-    notes: "26 sales 10/14-10/18, median 1,578.50. Apr guide 4,075.50. Missing Texture variant is a separate card. OVERSUPPLIED."
+    ticker: "UBER 2026-11-20 70C/75C",
+    type: "OPTION - call debit spread",
+    price: "Net debit ~$1.73 ($173/contract) from Oct 20 last trades (70C 3.11, 75C 1.38); bid/ask unavailable pre-market",
+    quantMetrics: "Max loss $173; max gain $327; breakeven $71.73 (+4.0% vs $68.94); 70C vol 723, 75C vol 1,122",
+    analystRating: "Underlying Buy; avg PT $100.86",
+    earningsDate: "2026-11-04 (confirmed) - SPANS EARNINGS",
+    thesis: "Low-cost rebound play near 52w low into Nov 4 earnings",
+    risk: "Earnings binary; downtrend below 50/200-day SMAs; most retail options traders lose money - entertainment money only",
+    allocationSuggestion: "Small speculative slice, 1 contract"
   },
   {
-    card: "Mega Charizard X ex SIR 125/094, Phantasmal Flames, English, PSA 10",
-    type: "single",
-    lastSoldPrice: "1525.00",
-    soldDate: "2026-10-19",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "33082",
-    populationTrend: "rising",
-    priceTrend6mo: "-48% (down)",
-    notes: "28 sales 10/16-10/19, median 1,439.50. Apr guide 2,824.50. OVERSUPPLIED."
+    ticker: "ABT 2026-11-20 105C/110C",
+    type: "OPTION - call debit spread",
+    price: "Net debit ~$1.61 ($161/contract) from Oct 20 last trades (105C 3.26, 110C 1.65); bid/ask unavailable pre-market",
+    quantMetrics: "Max loss $161; max gain $339; breakeven $106.61 (+4.1% vs $102.45); 110C vol 4,371, 105C vol 321",
+    analystRating: "Underlying Strong Buy; avg PT $120.72",
+    earningsDate: "2026-10-21 BMO (confirmed) - earnings TODAY, before any fill; Oct 20 premiums will be stale at the open",
+    thesis: "Cheapest defined-risk play on a defensive name; enter only after seeing the earnings reaction",
+    risk: "Premiums reprice at open after earnings; most retail options traders lose money - entertainment money only",
+    allocationSuggestion: "Small speculative slice, 1 contract; re-quote after open"
   },
   {
-    card: "Umbreon H30/H32 holo, Skyridge, English, PSA 10 (no swirl)",
-    type: "single",
-    lastSoldPrice: "NA",
-    soldDate: "NA",
-    source: "eBay sold via PriceCharting (swirl not stated)",
-    psa10Population: "129",
-    populationTrend: "flat",
-    priceTrend6mo: "+213% (up, any-swirl guide)",
-    notes: "NO EXACT PRICE: no sale confirms no swirl (filed Unverified). Any-swirl PSA 10: 142,655 (10/6), 100,000 and 65,000 (9/13), THIN. Thin supply, strong demand."
-  },
-  {
-    card: "Magcargo ex 95/97, EX Dragon, English, raw NM and PSA 10",
-    type: "single",
-    lastSoldPrice: "89.96",
-    soldDate: "2026-10-13",
-    source: "TCGplayer sale via PriceCharting",
-    psa10Population: "124",
-    populationTrend: "flat",
-    priceTrend6mo: "+67% raw / +37% PSA 10 (up)",
-    notes: "Raw: 6 NM sales/30d, median about 87.50. PSA 10 last 2,798.66 (10/18); 10k-11k sales on 9/28 flagged as outliers. APPRECIATING."
-  },
-  {
-    card: "Pikachu with Grey Felt Hat SVP 085, English, raw",
-    type: "single",
-    lastSoldPrice: "923.99",
-    soldDate: "2026-10-17",
-    source: "TCGplayer sale via PriceCharting",
-    psa10Population: "50352",
-    populationTrend: "rising",
-    priceTrend6mo: "-6% (down)",
-    notes: "17 raw sales/30d, median 962.50. Sealed-in-sleeve sales counted separately. Huge pop."
-  },
-  {
-    card: "Mega Darkrai ex MUR 118/081, Abyss Eye, Japanese, PSA 9",
-    type: "single",
-    lastSoldPrice: "249.99",
-    soldDate: "2026-10-18",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "1263",
-    populationTrend: "NA",
-    priceTrend6mo: "-70% since May release (down)",
-    notes: "6 PSA 9 sales/30d, 150-249.99 (median about 175). Pop shown is PSA 10. No source shows Japanese print worth more than English."
-  },
-  {
-    card: "Giovanni's Gyarados 5/132, Gym Challenge 1st Ed holo, English, PSA 8",
-    type: "single",
-    lastSoldPrice: "749.00",
-    soldDate: "2026-10-19",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "200",
-    populationTrend: "flat",
-    priceTrend6mo: "+33% (up)",
-    notes: "THIN: 4 PSA 8 sales/30d, 600-749; Aug-Sep 431-499. PSA 8 pop 653. APPRECIATING."
-  },
-  {
-    card: "Espeon ex 070/128, 30th Celebration, English, raw",
-    type: "single",
-    lastSoldPrice: "2.49",
-    soldDate: "2026-10-19",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "0",
-    populationTrend: "NA",
-    priceTrend6mo: "NA",
-    notes: "42 sales/30d, median 2.46; was 69.99 presale. Bulk."
-  },
-  {
-    card: "Espeon ex 043/040 full art, JP 30th Celebration Premium Deck, Japanese, raw",
-    type: "single",
-    lastSoldPrice: "70.00",
-    soldDate: "2026-10-16",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "NA",
-    notes: "29 sales since 10/1, median 52.79. New in Oct. PSA pop not checked."
-  },
-  {
-    card: "Yveltal 100/128, 30th Celebration, English, raw",
-    type: "single",
-    lastSoldPrice: "0.99",
-    soldDate: "2026-10-17",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "NA",
-    notes: "44 sales/30d, median 1.22. Bulk."
-  },
-  {
-    card: "Pikachu 040/128, 30th Celebration, English, raw",
-    type: "single",
-    lastSoldPrice: "2.04",
-    soldDate: "2026-10-19",
-    source: "TCGplayer sale via PriceCharting",
-    psa10Population: "1",
-    populationTrend: "NA",
-    priceTrend6mo: "NA",
-    notes: "43 sales/30d, median 3.67; presale 49-99 collapsed."
-  },
-  {
-    card: "OP-17 booster box (One Piece, EN, sealed)",
-    type: "sealed",
-    lastSoldPrice: "333.16",
-    soldDate: "2026-10-17",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "-17% since Aug release (down)",
-    notes: "Not Pokémon. 31 EN sales/30d, median about 300."
-  },
-  {
-    card: "Monkey.D.Luffy SP EB04-061 (One Piece), raw",
-    type: "single",
-    lastSoldPrice: "8700.00",
-    soldDate: "2026-10-02",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "-18% since Sep (down)",
-    notes: "Not Pokémon. THIN: 3 sales/30d; variant naming mixed, not photo-checked."
-  },
-  {
-    card: "Cooper Flagg 2025-26 Topps Chrome #251 base RC, PSA 10",
-    type: "single",
-    lastSoldPrice: "300.00",
-    soldDate: "2026-10-19",
-    source: "Fanatics Collect via SportsCardsPro",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "-9% (down)",
-    notes: "Not Pokémon. 13 sales/30d, median 300. Pop unavailable."
-  },
-  {
-    card: "Victor Wembanyama 2023-24 Panini Prizm #136 base RC, PSA 10",
-    type: "single",
-    lastSoldPrice: "399.99",
-    soldDate: "2026-10-17",
-    source: "eBay sold via SportsCardsPro",
-    psa10Population: "27188",
-    populationTrend: "NA",
-    priceTrend6mo: "+48% (up)",
-    notes: "Not Pokémon. 21 sales 10/12-10/17, median 369.99."
-  },
-  {
-    card: "Lilo & Stitch Fun-Loving Friends 244/207 Iconic, Lorcana AOTV, raw",
-    type: "single",
-    lastSoldPrice: "1000.00",
-    soldDate: "2026-10-04",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "-45% since Jul (down)",
-    notes: "Not Pokémon. 7 sales/30d, median 1,099.99; none since 10/4."
-  },
-  {
-    card: "Pokémon 30th Celebration Elite Trainer Box (EN, sealed)",
-    type: "sealed",
-    lastSoldPrice: "128.40",
-    soldDate: "2026-10-19",
-    source: "TCGplayer sale via PriceCharting",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "NA",
-    notes: "34 sales 10/12-10/19, median 134.95. Down about 28% from 187.05 on 9/4. Target loaded 140,000+ ETBs, restocked 10/16; 16 restocks/30d. OVERSUPPLIED, still falling."
-  },
-  {
-    card: "Pokémon 30th Celebration Pokémon Center ETB (EN, sealed)",
-    type: "sealed",
-    lastSoldPrice: "297.99",
-    soldDate: "2026-10-17",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "NA",
-    notes: "42 sales/30d, median 300. Holding 250-300 after falling from 495 (about -39%)."
-  },
-  {
-    card: "Pokémon 30th Celebration Booster Bundle (EN, 6 packs)",
-    type: "sealed",
-    lastSoldPrice: "72.00",
-    soldDate: "2026-10-17",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "NA",
-    notes: "39 sales/30d, median 69.99. Down about 24% from early Sep; leveling off."
-  },
-  {
-    card: "Pokémon M6a 30th CELEBRATION Booster Box (Japanese, sealed)",
-    type: "sealed",
-    lastSoldPrice: "230.00",
-    soldDate: "2026-10-19",
-    source: "Fanatics Collect via PriceCharting",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "NA",
-    notes: "29 sales 10/15-10/19, median 204.99. Flat week over week."
-  },
-  {
-    card: "Mew R/RGB (red), ME: 30th Celebration, English, raw NM",
-    type: "single",
-    lastSoldPrice: "5499.00",
-    soldDate: "2026-10-14",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "61",
-    populationTrend: "rising",
-    priceTrend6mo: "NA",
-    notes: "29 raw sales, median 4,300. PSA 10: 12,300-13,700 (10/15-10/18), THIN. Holding to rising."
-  },
-  {
-    card: "Mew B/RGB (blue), ME: 30th Celebration, English, raw NM",
-    type: "single",
-    lastSoldPrice: "3664.93",
-    soldDate: "2026-10-17",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "41",
-    populationTrend: "rising",
-    priceTrend6mo: "NA",
-    notes: "26 sales/30d, median 4,050. PSA 10: 13,850-14,800, THIN. Steady."
-  },
-  {
-    card: "Mew G/RGB (green), ME: 30th Celebration, English, raw NM",
-    type: "single",
-    lastSoldPrice: "3400.00",
-    soldDate: "2026-10-16",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "29",
-    populationTrend: "rising",
-    priceTrend6mo: "NA",
-    notes: "28 sales, median 3,747.50. PSA 10: 1 sale at 9,300, THIN. Hardest to gem (41%). Softest of the three."
-  },
-  {
-    card: "Lugia Classic Collection 149/147, ME: 30th Celebration, English, raw NM",
-    type: "single",
-    lastSoldPrice: "295.00",
-    soldDate: "2026-10-18",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "11",
-    populationTrend: "NA",
-    priceTrend6mo: "NA",
-    notes: "34 NM sales/30d, median 239.50; rebounded from 189.99. PSA 10: 13 sales, median 2,025 (10/13-10/18), down from 3,850 (10/4)."
-  },
-  {
-    card: "Celebrations Classic Collection Blastoise 2/102, English, CGC 10 Gem Mint",
-    type: "single",
-    lastSoldPrice: "40.00",
-    soldDate: "2026-10-17",
-    source: "Fanatics Collect via PriceCharting",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "NA",
-    notes: "CGC slab. 12 sales/30d, median 50.50, down from about 63 last week."
-  },
-  {
-    card: "Gyarados 6/102 Base Set 1st Edition holo, English, PSA 8",
-    type: "single",
-    lastSoldPrice: "2700.00",
-    soldDate: "2026-10-15",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "89",
-    populationTrend: "flat",
-    priceTrend6mo: "+34% (up)",
-    notes: "THIN: 3 PSA 8 sales/30d (2,700-3,300). PSA 8 pop 527. APPRECIATING."
-  },
-  {
-    card: "Braixen 7 of Hearts, 2013 Pokémon X/Y Trump deck, Japanese, CGC 10 (cert 6086995155)",
-    type: "single",
-    lastSoldPrice: "NA",
-    soldDate: "NA",
-    source: "CGC cert lookup (blocked)",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "NA",
-    notes: "No identical sale. Cert page blocked. Nearest non-identical: CGC 10 Pristine copy sold 14.40 (3/9/2026)."
-  },
-  {
-    card: "Yu-Gi-Oh Magnificent Monsters (MAMO) box, English 1st Ed, sealed",
-    type: "sealed",
-    lastSoldPrice: "35.15",
-    soldDate: "2026-10-03",
-    source: "eBay sold via PriceCharting",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "NA",
-    notes: "Not Pokémon. THIN: 4 sales total. MSRP parity."
-  },
-  {
-    card: "Evolving Skies Booster Box (EN, 36 packs, sealed)",
-    type: "sealed",
-    lastSoldPrice: "2446.95",
-    soldDate: "2026-10-17",
-    source: "TCGplayer sale via PriceCharting",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "-11% (down)",
-    notes: "38 sales/30d, median 2,190. Out of print; demand cooling."
+    ticker: "AVGO 2026-11-20 360C/380C",
+    type: "OPTION - call debit spread",
+    price: "Net debit ~$3.48 ($348/contract) from Oct 20 last trades (360C 6.40, 380C 2.92); bid/ask unavailable pre-market",
+    quantMetrics: "Max loss $348; max gain $1,652; breakeven $363.48 (+8.7% vs $334.37); 360C vol 807, 380C vol 955",
+    analystRating: "Underlying Strong Buy; avg PT $527.59",
+    earningsDate: "2026-12-09 (Yahoo estimate, unconfirmed) - does not span earnings if date holds",
+    thesis: "Rebound bet on AI chip leader 32% off its high",
+    risk: "Needs +8.7% in 1 month while in a downtrend; high beta; most retail options traders lose money - entertainment money only",
+    allocationSuggestion: "Smallest speculative slice, 1 contract"
   }
 ];
 
 export const pipeReport = [
-  "Prismatic Evolutions Elite Trainer Box (EN, sealed) / sealed / 120.21 / 2026-10-17 / eBay sold via PriceCharting / NA / NA / -25% (down) / 32 sales/30d, median 129.99 (119.99-145). Apr guide 171.65 to Oct 129.45. Supply: multiple reprints, Walmart drop at 69 on 10/7, Target/Amazon restocks. Drifting down.",
-  "Prismatic Evolutions Pokémon Center ETB (EN, sealed) / sealed / 383.00 / 2026-10-17 / TCGplayer sale via PriceCharting / NA / NA / -24% (down) / 41 sales/30d, median 400 (335-425). Apr guide 525 to Oct 399.99. Flat since late Aug. PC exclusive, no restock news.",
-  "Prismatic Evolutions Booster Bundle (EN, sealed) / sealed / 85.00 / 2026-10-18 / TCGplayer sale via PriceCharting / NA / NA / +19% (up) / 33 sales/30d, median 82. Apr guide 71.94 to Oct 85.25, but June sales 95-102, so soft since summer.",
-  "Prismatic Evolutions Super Premium Collection (EN, sealed) / sealed / 254.81 / 2026-10-17 / TCGplayer sale via PriceCharting / NA / NA / -22% (down) / 34 sales/30d, median 240 (215-279.99). 15 US restocks in 30 days (last Amazon 10/18); Target 129.99 restock 10/1. Restocks capping price.",
-  "Prismatic Evolutions Booster Bundle Display Box (EN, sealed) / sealed / 1549.95 / 2026-09-29 / eBay sold via PriceCharting / NA / NA / +14% (up, guide; thin) / THIN: 2 sales/30d, 6 in 90d (1,075-1,560), none in October. April sales were 1,250-1,899, so actual sales are flat to down.",
-  "Umbreon ex SIR 161/131, Prismatic Evolutions, English, PSA 10 / single / 4700.00 / 2026-10-18 / eBay sold via PriceCharting / 6566 / rising / -11% (down) / 27 sales since 10/1, median 4,965; softening mid-Oct (4,450-5,200). June peak 7,112.50. Pop up from 5,487.",
-  "Charizard ex SIR 199/165, Scarlet & Violet 151, English, PSA 10 / single / 1224.00 / 2026-10-18 / eBay sold via PriceCharting / 28709 / rising / -23% (down) / 25 sales since 10/1, median 1,360. Huge and growing pop with falling price. OVERSUPPLIED.",
-  "Mega Gengar ex SIR 284/217, Ascended Heroes, English, PSA 10 / single / 1579.00 / 2026-10-18 / eBay sold via PriceCharting / 9680 / rising / -61% (down) / 26 sales 10/14-10/18, median 1,578.50. Apr guide 4,075.50. Missing Texture variant is a separate card. OVERSUPPLIED.",
-  "Mega Charizard X ex SIR 125/094, Phantasmal Flames, English, PSA 10 / single / 1525.00 / 2026-10-19 / eBay sold via PriceCharting / 33082 / rising / -48% (down) / 28 sales 10/16-10/19, median 1,439.50. Apr guide 2,824.50. OVERSUPPLIED.",
-  "Umbreon H30/H32 holo, Skyridge, English, PSA 10 (no swirl) / single / NA / NA / eBay sold via PriceCharting (swirl not stated) / 129 / flat / +213% (up, any-swirl guide) / NO EXACT PRICE: no sale confirms no swirl (filed Unverified). Any-swirl PSA 10: 142,655 (10/6), 100,000 and 65,000 (9/13), THIN. Thin supply, strong demand.",
-  "Magcargo ex 95/97, EX Dragon, English, raw NM and PSA 10 / single / 89.96 / 2026-10-13 / TCGplayer sale via PriceCharting / 124 / flat / +67% raw / +37% PSA 10 (up) / Raw: 6 NM sales/30d, median about 87.50. PSA 10 last 2,798.66 (10/18); 10k-11k sales on 9/28 flagged as outliers. APPRECIATING.",
-  "Pikachu with Grey Felt Hat SVP 085, English, raw / single / 923.99 / 2026-10-17 / TCGplayer sale via PriceCharting / 50352 / rising / -6% (down) / 17 raw sales/30d, median 962.50. Sealed-in-sleeve sales counted separately. Huge pop.",
-  "Mega Darkrai ex MUR 118/081, Abyss Eye, Japanese, PSA 9 / single / 249.99 / 2026-10-18 / eBay sold via PriceCharting / 1263 / NA / -70% since May release (down) / 6 PSA 9 sales/30d, 150-249.99 (median about 175). Pop shown is PSA 10. No source shows Japanese print worth more than English.",
-  "Giovanni's Gyarados 5/132, Gym Challenge 1st Ed holo, English, PSA 8 / single / 749.00 / 2026-10-19 / eBay sold via PriceCharting / 200 / flat / +33% (up) / THIN: 4 PSA 8 sales/30d, 600-749; Aug-Sep 431-499. PSA 8 pop 653. APPRECIATING.",
-  "Espeon ex 070/128, 30th Celebration, English, raw / single / 2.49 / 2026-10-19 / eBay sold via PriceCharting / 0 / NA / NA / 42 sales/30d, median 2.46; was 69.99 presale. Bulk.",
-  "Espeon ex 043/040 full art, JP 30th Celebration Premium Deck, Japanese, raw / single / 70.00 / 2026-10-16 / eBay sold via PriceCharting / NA / NA / NA / 29 sales since 10/1, median 52.79. New in Oct. PSA pop not checked.",
-  "Yveltal 100/128, 30th Celebration, English, raw / single / 0.99 / 2026-10-17 / eBay sold via PriceCharting / NA / NA / NA / 44 sales/30d, median 1.22. Bulk.",
-  "Pikachu 040/128, 30th Celebration, English, raw / single / 2.04 / 2026-10-19 / TCGplayer sale via PriceCharting / 1 / NA / NA / 43 sales/30d, median 3.67; presale 49-99 collapsed.",
-  "OP-17 booster box (One Piece, EN, sealed) / sealed / 333.16 / 2026-10-17 / eBay sold via PriceCharting / NA / NA / -17% since Aug release (down) / Not Pokémon. 31 EN sales/30d, median about 300.",
-  "Monkey.D.Luffy SP EB04-061 (One Piece), raw / single / 8700.00 / 2026-10-02 / eBay sold via PriceCharting / NA / NA / -18% since Sep (down) / Not Pokémon. THIN: 3 sales/30d; variant naming mixed, not photo-checked.",
-  "Cooper Flagg 2025-26 Topps Chrome #251 base RC, PSA 10 / single / 300.00 / 2026-10-19 / Fanatics Collect via SportsCardsPro / NA / NA / -9% (down) / Not Pokémon. 13 sales/30d, median 300. Pop unavailable.",
-  "Victor Wembanyama 2023-24 Panini Prizm #136 base RC, PSA 10 / single / 399.99 / 2026-10-17 / eBay sold via SportsCardsPro / 27188 / NA / +48% (up) / Not Pokémon. 21 sales 10/12-10/17, median 369.99.",
-  "Lilo & Stitch Fun-Loving Friends 244/207 Iconic, Lorcana AOTV, raw / single / 1000.00 / 2026-10-04 / eBay sold via PriceCharting / NA / NA / -45% since Jul (down) / Not Pokémon. 7 sales/30d, median 1,099.99; none since 10/4.",
-  "Pokémon 30th Celebration Elite Trainer Box (EN, sealed) / sealed / 128.40 / 2026-10-19 / TCGplayer sale via PriceCharting / NA / NA / NA / 34 sales 10/12-10/19, median 134.95. Down about 28% from 187.05 on 9/4. Target loaded 140,000+ ETBs, restocked 10/16; 16 restocks/30d. OVERSUPPLIED, still falling.",
-  "Pokémon 30th Celebration Pokémon Center ETB (EN, sealed) / sealed / 297.99 / 2026-10-17 / eBay sold via PriceCharting / NA / NA / NA / 42 sales/30d, median 300. Holding 250-300 after falling from 495 (about -39%).",
-  "Pokémon 30th Celebration Booster Bundle (EN, 6 packs) / sealed / 72.00 / 2026-10-17 / eBay sold via PriceCharting / NA / NA / NA / 39 sales/30d, median 69.99. Down about 24% from early Sep; leveling off.",
-  "Pokémon M6a 30th CELEBRATION Booster Box (Japanese, sealed) / sealed / 230.00 / 2026-10-19 / Fanatics Collect via PriceCharting / NA / NA / NA / 29 sales 10/15-10/19, median 204.99. Flat week over week.",
-  "Mew R/RGB (red), ME: 30th Celebration, English, raw NM / single / 5499.00 / 2026-10-14 / eBay sold via PriceCharting / 61 / rising / NA / 29 raw sales, median 4,300. PSA 10: 12,300-13,700 (10/15-10/18), THIN. Holding to rising.",
-  "Mew B/RGB (blue), ME: 30th Celebration, English, raw NM / single / 3664.93 / 2026-10-17 / eBay sold via PriceCharting / 41 / rising / NA / 26 sales/30d, median 4,050. PSA 10: 13,850-14,800, THIN. Steady.",
-  "Mew G/RGB (green), ME: 30th Celebration, English, raw NM / single / 3400.00 / 2026-10-16 / eBay sold via PriceCharting / 29 / rising / NA / 28 sales, median 3,747.50. PSA 10: 1 sale at 9,300, THIN. Hardest to gem (41%). Softest of the three.",
-  "Lugia Classic Collection 149/147, ME: 30th Celebration, English, raw NM / single / 295.00 / 2026-10-18 / eBay sold via PriceCharting / 11 / NA / NA / 34 NM sales/30d, median 239.50; rebounded from 189.99. PSA 10: 13 sales, median 2,025 (10/13-10/18), down from 3,850 (10/4).",
-  "Celebrations Classic Collection Blastoise 2/102, English, CGC 10 Gem Mint / single / 40.00 / 2026-10-17 / Fanatics Collect via PriceCharting / NA / NA / NA / CGC slab. 12 sales/30d, median 50.50, down from about 63 last week.",
-  "Gyarados 6/102 Base Set 1st Edition holo, English, PSA 8 / single / 2700.00 / 2026-10-15 / eBay sold via PriceCharting / 89 / flat / +34% (up) / THIN: 3 PSA 8 sales/30d (2,700-3,300). PSA 8 pop 527. APPRECIATING.",
-  "Braixen 7 of Hearts, 2013 Pokémon X/Y Trump deck, Japanese, CGC 10 (cert 6086995155) / single / NA / NA / CGC cert lookup (blocked) / NA / NA / NA / No identical sale. Cert page blocked. Nearest non-identical: CGC 10 Pristine copy sold 14.40 (3/9/2026).",
-  "Yu-Gi-Oh Magnificent Monsters (MAMO) box, English 1st Ed, sealed / sealed / 35.15 / 2026-10-03 / eBay sold via PriceCharting / NA / NA / NA / Not Pokémon. THIN: 4 sales total. MSRP parity.",
-  "Evolving Skies Booster Box (EN, 36 packs, sealed) / sealed / 2446.95 / 2026-10-17 / TCGplayer sale via PriceCharting / NA / NA / -11% (down) / 38 sales/30d, median 2,190. Out of print; demand cooling."
+  "GOOGL / STOCK / $340.28 (Oct 20 close) / PE 17.1; fwd PE 22.2; PEG 1.16; FY26 EPS est growth +23.3%; beta 1.21; 52w 249.29-408.61 / Strong Buy; 62 analysts (44 SB/13 Buy/5 Hold); avg PT $430.51 (+26.5%) / 2026-10-28 AMC (confirmed) / Lowest PE in group with ~23% EPS growth est and ~27% to avg PT / Earnings in 1 week; AI capex/regulatory headlines; -2.1% last week / Core, ~25% of weekly budget; consider splitting before/after Oct 28",
+  "AVGO / STOCK / $334.37 (Oct 20 close) / PE 42.7; fwd PE 17.2; PEG 0.27; FY EPS est growth +70.9%; beta 1.48; 32% below 52w high 495.00 / Strong Buy; 50 analysts (40 SB/7 Buy/3 Hold); avg PT $527.59 (+57.8%) / 2026-12-09 (Yahoo estimate; not yet confirmed by company) / Largest upside to avg PT; fwd PE ~17 on ~71% EPS growth est / High beta; below 20/50/200-day SMAs (downtrend); -7.7% past month / Core, ~20% of weekly budget in small tranches",
+  "UBER / STOCK / $68.94 (Oct 20 close) / PE 15.1; fwd PE 15.6; FY26 EPS est growth +37%; beta 1.27; 5.9% above 52w low 65.41 / Buy; 50 analysts (32 SB/9 Buy/8 Hold/1 Strong Sell); avg PT $100.86 (+46.3%) / 2026-11-04 BMO (confirmed) / Cheapest fwd PE in group; 46% to avg PT; near 52w low / Robotaxi competition; below 50/200-day SMAs; earnings Nov 4 / Tranche, ~15% of weekly budget",
+  "ABT / STOCK / $102.45 (Oct 20 close) / PE 33.0; fwd PE 16.9; div yield 2.46%; beta 0.58; FY EPS est growth +7.2% / Strong Buy; 28 analysts (19 SB/5 Buy/4 Hold); avg PT $120.72 (+17.8%) / 2026-10-21 BMO (confirmed; TODAY before the open) / Defensive dividend payer at ~17x fwd earnings; ratings trending up / Reports today - price can gap at the open; trailing EPS -48% Q/Q / Defensive, ~10% of weekly budget; wait to see earnings reaction",
+  "LLY / STOCK / $1,283.66 (Oct 20 close) / PE 43.1; fwd PE 27.2; PEG 0.88; FY EPS est growth +44.1%; beta 0.45; 2.1% below 52w high 1311.75 / Buy; 31 analysts (20 SB/6 Buy/3 Hold/1 Sell/1 Strong Sell); avg PT $1,328 (+3.5%) / 2026-10-29 BMO (confirmed) / Obesity-drug growth leader; +9.3% past month / Only ~3.5% to avg PT after the run; earnings Oct 29; drug-pricing policy / Small, ~5% of weekly budget (fractional); wait for pullback",
+  "V / STOCK / $406.57 (Oct 20 close; near 52w high 408.59) / PE 34.6; fwd PE 27.1; FY EPS est growth +15.4%; beta 0.77; div yield 0.66% / Strong Buy; 40 analysts (27 SB/9 Buy/3 Hold/1 Sell); avg PT $422.77 (+4.0%) / 2026-10-27 AMC (confirmed) / Quality low-beta compounder / Only ~4% to avg PT at 52w high after +12% month; earnings Oct 27 / Small, ~5% of weekly budget; wait for pullback",
+  "GOOGL 2026-11-20 360C/380C / OPTION - call debit spread / Net debit ~$4.30 ($430/contract) from Oct 20 last trades (360C 7.15, 380C 2.85); bid/ask unavailable pre-market / Max loss $430; max gain $1,570; breakeven $364.30 (+7.1% vs $340.28); 360C vol 1,586, 380C vol 954 / Underlying Strong Buy; avg PT $430.51 / 2026-10-28 (confirmed) - SPANS EARNINGS / Defined-risk bet GOOGL recovers above $364 after Oct 28 earnings / Needs +7.1% in 1 month; earnings gap either way; most retail options traders lose money - entertainment money only / Small speculative slice, 1 contract max",
+  "UBER 2026-11-20 70C/75C / OPTION - call debit spread / Net debit ~$1.73 ($173/contract) from Oct 20 last trades (70C 3.11, 75C 1.38); bid/ask unavailable pre-market / Max loss $173; max gain $327; breakeven $71.73 (+4.0% vs $68.94); 70C vol 723, 75C vol 1,122 / Underlying Buy; avg PT $100.86 / 2026-11-04 (confirmed) - SPANS EARNINGS / Low-cost rebound play near 52w low into Nov 4 earnings / Earnings binary; downtrend below 50/200-day SMAs; most retail options traders lose money - entertainment money only / Small speculative slice, 1 contract",
+  "ABT 2026-11-20 105C/110C / OPTION - call debit spread / Net debit ~$1.61 ($161/contract) from Oct 20 last trades (105C 3.26, 110C 1.65); bid/ask unavailable pre-market / Max loss $161; max gain $339; breakeven $106.61 (+4.1% vs $102.45); 110C vol 4,371, 105C vol 321 / Underlying Strong Buy; avg PT $120.72 / 2026-10-21 BMO (confirmed) - earnings TODAY, before any fill; Oct 20 premiums will be stale at the open / Cheapest defined-risk play on a defensive name; enter only after seeing the earnings reaction / Premiums reprice at open after earnings; most retail options traders lose money - entertainment money only / Small speculative slice, 1 contract; re-quote after open",
+  "AVGO 2026-11-20 360C/380C / OPTION - call debit spread / Net debit ~$3.48 ($348/contract) from Oct 20 last trades (360C 6.40, 380C 2.92); bid/ask unavailable pre-market / Max loss $348; max gain $1,652; breakeven $363.48 (+8.7% vs $334.37); 360C vol 807, 380C vol 955 / Underlying Strong Buy; avg PT $527.59 / 2026-12-09 (Yahoo estimate, unconfirmed) - does not span earnings if date holds / Rebound bet on AI chip leader 32% off its high / Needs +8.7% in 1 month while in a downtrend; high beta; most retail options traders lose money - entertainment money only / Smallest speculative slice, 1 contract"
 ];
-
-export const summary = "Appreciating: Umbreon H30 Skyridge PSA 10 (thin, no-swirl unverified), Magcargo ex 95/97, both 1st Ed Gyarados PSA 8s (thin), Wembanyama Prizm PSA 10, and the red Mew holding about 4.3k raw. Oversupplied: modern SIR PSA 10s with big rising pops (Mega Gengar -61%, Mega Charizard X -48%, Charizard 151 -23%, Umbreon 161 -11%), English 30th Celebration sealed (ETB -28% with a 140k Target load), and Prismatic ETB, PC ETB and SPC (-22% to -25% on restocks). 30th Celebration commons are bulk.";
