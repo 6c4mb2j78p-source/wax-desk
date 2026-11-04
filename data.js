@@ -1,113 +1,136 @@
-// Weekly card market research snapshot.
-// Source: Manual research (Notion Card Market Scout agent blocked by Business plan entitlement), week of 2026-11-02.
+// Weekly stock & options research snapshot.
+// Source: Manual research (Notion Stock & Options Scout agent blocked by Business plan entitlement), week of 2026-11-04.
 // No card-ledger repo exists; written to 6c4mb2j78p-source/wax-desk as the fallback data file.
-// Replaces the prior week's data (2026-10-26).
-// Prices are recent market/sold aggregates from TCGplayer, PriceCharting, PokeFocus, pokeinvest, etc. as of early Nov 2026.
-// Research only, not advice. Verify live quotes and do your own due diligence.
+// Replaces the prior week's data (2026-11-02).
+// Prices and metrics from Bigdata.com / FMP as of 2026-11-04. Research only, not advice. Verify live quotes and do your own due diligence.
 
-export const researchWeek = "2026-11-02";
-export const asOf = "2026-11-02";
+export const researchWeek = "2026-11-04";
+export const asOf = "2026-11-04";
 
-export const cardMarketRows = [
+export const stockOptionsRows = [
   {
-    card: "Pokémon 30th Celebration Elite Trainer Box (EN, sealed)",
-    type: "SEALED_ETB",
-    lastSoldPrice: "114.00",
-    soldDate: "2026-11-02",
-    source: "TCGplayer market / PokeFocus",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "-30% since Sep (down)",
-    notes: "Market ~$113-118; 30d median ~$129. High volume, 500+ listings. Still OVERSUPPLIED, down ~15% from late Oct ~128-135."
+    ticker: "NVDA",
+    type: "STOCK",
+    price: "206.69",
+    quantMetrics: "Beta 2.22, YTD +10.8%, 1M -11.7%, above 200MA",
+    analystRating: "Buy (58 Buy / 16 Hold), PT $339",
+    earningsDate: "2026-11-17",
+    thesis: "AI leader with strong analyst support and upside to consensus PT despite recent pullback.",
+    risk: "High beta, valuation, macro sensitivity.",
+    allocationSuggestion: "Core 5-8%"
   },
   {
-    card: "Pokémon 30th Celebration Pokémon Center ETB (EN, sealed)",
-    type: "SEALED_PC_ETB",
-    lastSoldPrice: "275.00",
-    soldDate: "2026-11-01",
-    source: "TCGplayer / pokevizinvestor",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "-45% since Sep (down)",
-    notes: "Market ~$275-278. Down from ~293 late Oct and ~300 prior. Stabilizing but soft."
+    ticker: "AVGO",
+    type: "STOCK",
+    price: "332.13",
+    quantMetrics: "Beta 1.50, strong semi momentum",
+    analystRating: "Buy (55 Buy / 5 Hold), PT $514",
+    earningsDate: "2026-12-10",
+    thesis: "AI infrastructure beneficiary with highest analyst conviction among large semis.",
+    risk: "Competition, cycle risk.",
+    allocationSuggestion: "Core 4-6%"
   },
   {
-    card: "Pokémon 30th Celebration Booster Bundle (EN, 6 packs, sealed)",
-    type: "SEALED_BUNDLE",
-    lastSoldPrice: "67.00",
-    soldDate: "2026-11-02",
-    source: "TCGplayer / PokeFocus",
-    psa10Population: "NA",
-    populationTrend: "NA",
-    priceTrend6mo: "-15% since Sep (down)",
-    notes: "Market ~$67-71. Flat-to-soft vs prior ~69-70. ~$11/pack. Oversupplied."
+    ticker: "LLY",
+    type: "STOCK",
+    price: "1409.38",
+    quantMetrics: "Low beta 0.45, healthcare strength",
+    analystRating: "Buy (34 Buy / 9 Hold), PT $1443",
+    earningsDate: "2027-02-05",
+    thesis: "Defensive growth via GLP-1 franchise, solid Buy ratings.",
+    risk: "Pipeline, regulatory, high absolute price.",
+    allocationSuggestion: "Core 3-5%"
   },
   {
-    card: "Umbreon ex SIR 161/131, Prismatic Evolutions, English, PSA 10",
-    type: "SINGLE",
-    lastSoldPrice: "4200.00",
-    soldDate: "2026-11-01",
-    source: "pokeinsider / PriceCharting aggregates",
-    psa10Population: "6748",
-    populationTrend: "up",
-    priceTrend6mo: "-20% (down)",
-    notes: "PSA 10 ~$4.2k-$5k. Pop ~6.6k-6.7k (up from prior 6566). High supply, softening."
+    ticker: "PLTR",
+    type: "STOCK",
+    price: "175.40",
+    quantMetrics: "Beta 1.62, high volume",
+    analystRating: "Buy (16 Buy / 9 Hold), PT $217",
+    earningsDate: "2027-02-01",
+    thesis: "AI software growth story with improving analyst coverage.",
+    risk: "Valuation premium, execution.",
+    allocationSuggestion: "Satellite 2-4%"
   },
   {
-    card: "Mew R/RGB (red), ME: 30th Celebration, English, raw NM",
-    type: "SINGLE",
-    lastSoldPrice: "4500.00",
-    soldDate: "2026-11-01",
-    source: "TCGplayer / pokeprices",
-    psa10Population: "61",
-    populationTrend: "stable",
-    priceTrend6mo: "mixed (some +12% 30d)",
-    notes: "Raw ~$4.5k. Thin sales. PSA 10 ~$10k. APPRECIATING on some measures; thin supply."
+    ticker: "AMD",
+    type: "STOCK",
+    price: "483.90",
+    quantMetrics: "Beta 2.49, high volume",
+    analystRating: "Buy consensus expected",
+    earningsDate: "TBD",
+    thesis: "AI accelerator competitor to NVDA with high growth potential.",
+    risk: "High beta, competitive pressure.",
+    allocationSuggestion: "Satellite 2-3%"
   },
   {
-    card: "Gyarados 6/102 Base Set 1st Edition holo, English, PSA 8",
-    type: "SINGLE",
-    lastSoldPrice: "2250.00",
-    soldDate: "2026-02-22",
-    source: "Collectibles.com / underval",
-    psa10Population: "88",
-    populationTrend: "stable",
-    priceTrend6mo: "+50% (up)",
-    notes: "Recent comps thin; prior ~$3k. PSA 10 pop stable ~88. APPRECIATING long-term."
+    ticker: "MU",
+    type: "STOCK",
+    price: "855.10",
+    quantMetrics: "Beta 2.23, memory cycle",
+    analystRating: "Buy consensus expected",
+    earningsDate: "TBD",
+    thesis: "Memory pricing recovery supporting AI demand.",
+    risk: "Cyclical, high beta.",
+    allocationSuggestion: "Satellite 1-3%"
   },
   {
-    card: "Pikachu with Grey Felt Hat SVP 085, English, raw NM",
-    type: "SINGLE",
-    lastSoldPrice: "900.00",
-    soldDate: "2026-10-31",
-    source: "TCGplayer / thelabtcg",
-    psa10Population: "49970",
-    populationTrend: "up",
-    priceTrend6mo: "-5% (flat-down)",
-    notes: "Raw ~$850-980. Pop ~50k. Huge supply; drifting."
+    ticker: "NVDA",
+    type: "OPTIONS_CALL",
+    price: "Call ~$15-25 (ATM Nov/Dec)",
+    quantMetrics: "High IV around earnings, delta ~0.5",
+    analystRating: "Buy underlying",
+    earningsDate: "2026-11-17",
+    thesis: "Defined-risk long call into earnings for leveraged upside.",
+    risk: "Time decay, IV crush post-earnings, total loss possible.",
+    allocationSuggestion: "Speculative 1%"
   },
   {
-    card: "Mew ex SAR 205/165, Japanese Pokémon Card 151 (sv2a), PSA 10",
-    type: "SINGLE",
-    lastSoldPrice: "320.00",
-    soldDate: "2026-10-31",
-    source: "mycardpost / pokeinvest",
-    psa10Population: "23280",
-    populationTrend: "up",
-    priceTrend6mo: "-50% (down)",
-    notes: "PSA 10 ~$320-400. Pop 23k+. OVERSUPPLIED."
+    ticker: "AVGO",
+    type: "OPTIONS_CALL",
+    price: "Call ~$20-40",
+    quantMetrics: "Moderate IV",
+    analystRating: "Strong Buy underlying",
+    earningsDate: "2026-12-10",
+    thesis: "Long call on high-conviction AI name.",
+    risk: "Premium decay, directional miss.",
+    allocationSuggestion: "Speculative 1%"
+  },
+  {
+    ticker: "LLY",
+    type: "OPTIONS_PUT",
+    price: "Put ~$50-100 (OTM)",
+    quantMetrics: "Low beta hedge",
+    analystRating: "Buy underlying",
+    earningsDate: "2027-02-05",
+    thesis: "Protective put on high-priced defensive name.",
+    risk: "Cost of hedge reduces returns.",
+    allocationSuggestion: "Hedge 1%"
+  },
+  {
+    ticker: "PLTR",
+    type: "OPTIONS_CALL",
+    price: "Call ~$10-20",
+    quantMetrics: "Elevated IV",
+    analystRating: "Buy underlying",
+    earningsDate: "2027-02-01",
+    thesis: "High-reward call on volatile AI software name.",
+    risk: "Highest risk of full premium loss among list.",
+    allocationSuggestion: "Speculative 0.5-1%"
   }
 ];
 
 export const pipeReport = [
-  "Pokémon 30th Celebration Elite Trainer Box (EN, sealed) / SEALED_ETB / 114.00 / 2026-11-02 / TCGplayer market / PokeFocus / NA / NA / -30% since Sep (down) / Market ~$113-118; 30d median ~$129. High volume. Still OVERSUPPLIED, down from late Oct.",
-  "Pokémon 30th Celebration Pokémon Center ETB (EN, sealed) / SEALED_PC_ETB / 275.00 / 2026-11-01 / TCGplayer / pokevizinvestor / NA / NA / -45% since Sep (down) / Market ~$275-278. Softening from ~293.",
-  "Pokémon 30th Celebration Booster Bundle (EN, 6 packs, sealed) / SEALED_BUNDLE / 67.00 / 2026-11-02 / TCGplayer / PokeFocus / NA / NA / -15% since Sep (down) / Market ~$67-71. Flat-soft. Oversupplied.",
-  "Umbreon ex SIR 161/131, Prismatic Evolutions, English, PSA 10 / SINGLE / 4200.00 / 2026-11-01 / pokeinsider / PriceCharting / 6748 / up / -20% (down) / ~$4.2k-$5k. Pop up to ~6.7k. High supply, softening.",
-  "Mew R/RGB (red), ME: 30th Celebration, English, raw NM / SINGLE / 4500.00 / 2026-11-01 / TCGplayer / pokeprices / 61 / stable / mixed (some +12% 30d) / Raw ~$4.5k. Thin. APPRECIATING. PSA 10 ~$10k.",
-  "Gyarados 6/102 Base Set 1st Edition holo, English, PSA 8 / SINGLE / 2250.00 / 2026-02-22 / Collectibles.com / 88 / stable / +50% (up) / Thin comps. APPRECIATING long-term. Pop stable.",
-  "Pikachu with Grey Felt Hat SVP 085, English, raw NM / SINGLE / 900.00 / 2026-10-31 / TCGplayer / 49970 / up / -5% (flat-down) / ~$850-980. Huge pop ~50k. Drifting.",
-  "Mew ex SAR 205/165, Japanese Pokémon Card 151 (sv2a), PSA 10 / SINGLE / 320.00 / 2026-10-31 / mycardpost / 23280 / up / -50% (down) / ~$320-400. Pop 23k+. OVERSUPPLIED."
+  "NVDA / STOCK / 206.69 / Beta 2.22, YTD +10.8%, 1M -11.7%, above 200MA / Buy (58 Buy / 16 Hold), PT $339 / 2026-11-17 / AI leader with strong analyst support and upside to consensus PT despite recent pullback. / High beta, valuation, macro sensitivity. / Core 5-8%",
+  "AVGO / STOCK / 332.13 / Beta 1.50, strong semi momentum / Buy (55 Buy / 5 Hold), PT $514 / 2026-12-10 / AI infrastructure beneficiary with highest analyst conviction among large semis. / Competition, cycle risk. / Core 4-6%",
+  "LLY / STOCK / 1409.38 / Low beta 0.45, healthcare strength / Buy (34 Buy / 9 Hold), PT $1443 / 2027-02-05 / Defensive growth via GLP-1 franchise, solid Buy ratings. / Pipeline, regulatory, high absolute price. / Core 3-5%",
+  "PLTR / STOCK / 175.40 / Beta 1.62, high volume / Buy (16 Buy / 9 Hold), PT $217 / 2027-02-01 / AI software growth story with improving analyst coverage. / Valuation premium, execution. / Satellite 2-4%",
+  "AMD / STOCK / 483.90 / Beta 2.49, high volume / Buy consensus expected / TBD / AI accelerator competitor to NVDA with high growth potential. / High beta, competitive pressure. / Satellite 2-3%",
+  "MU / STOCK / 855.10 / Beta 2.23, memory cycle / Buy consensus expected / TBD / Memory pricing recovery supporting AI demand. / Cyclical, high beta. / Satellite 1-3%",
+  "NVDA / OPTIONS_CALL / Call ~$15-25 (ATM Nov/Dec) / High IV around earnings, delta ~0.5 / Buy underlying / 2026-11-17 / Defined-risk long call into earnings for leveraged upside. / Time decay, IV crush post-earnings, total loss possible. / Speculative 1%",
+  "AVGO / OPTIONS_CALL / Call ~$20-40 / Moderate IV / Strong Buy underlying / 2026-12-10 / Long call on high-conviction AI name. / Premium decay, directional miss. / Speculative 1%",
+  "LLY / OPTIONS_PUT / Put ~$50-100 (OTM) / Low beta hedge / Buy underlying / 2027-02-05 / Protective put on high-priced defensive name. / Cost of hedge reduces returns. / Hedge 1%",
+  "PLTR / OPTIONS_CALL / Call ~$10-20 / Elevated IV / Buy underlying / 2027-02-01 / High-reward call on volatile AI software name. / Highest risk of full premium loss among list. / Speculative 0.5-1%"
 ];
 
-// SUMMARY: Appreciating: Base Set 1st Ed Gyarados PSA 8 (long-term up, thin), Mew R/RGB raw (mixed but thin supply, ~$4.5k). Oversupplied or falling: English 30th ETB (~$114, still high volume down), PC ETB (~$275 soft), booster bundle (~$67), Prismatic Umbreon 161 PSA 10 (~$4.2k, pop 6.7k+), JP 151 Mew 205 PSA 10 (~$320, pop 23k+), Felt Hat Pikachu (pop 50k, drifting). Notion agent unavailable due to plan entitlement; data from public market sources.
+// SUMMARY: Strongest stock candidates: AVGO (strongest analyst Buy, high PT upside), NVDA (AI leader, solid Buy ratings despite pullback), LLY (defensive low-beta growth). Riskiest options trades: PLTR calls (high IV, volatile name, high chance of full loss), NVDA calls (earnings IV crush risk).
