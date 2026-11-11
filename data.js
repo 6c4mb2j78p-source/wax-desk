@@ -1,88 +1,136 @@
-// Weekly card market research snapshot.
-// Source: Manual research (Notion Card Market Scout agent blocked by Business plan entitlement), week of 2026-11-09.
+// Weekly stock & options research snapshot.
+// Source: Manual research (Notion Stock & Options Scout agent blocked by Business plan entitlement), week of 2026-11-11.
 // No card-ledger repo exists; written to 6c4mb2j78p-source/wax-desk as the fallback data file.
-// Replaces the prior week's data (2026-11-04 stock snapshot).
-// Prices and metrics from TCGPlayer, eBay solds, PokeInvest, SlabPing, etc. as of 2026-11-09. Research only, not advice. Verify live quotes and do your own due diligence.
+// Replaces the prior week's data.
+// Prices and metrics from Bigdata.com as of 2026-11-11. Research only, not advice. Verify live quotes and do your own due diligence.
 
-export const researchWeek = "2026-11-09";
-export const asOf = "2026-11-09";
+export const researchWeek = "2026-11-11";
+export const asOf = "2026-11-11";
 
-export const cardMarketRows = [
+export const stockOptionsRows = [
   {
-    card: "30th Celebration Elite Trainer Box (standard)",
-    type: "SEALED",
-    lastSoldPrice: "119.00",
-    soldDate: "2026-11-06",
-    source: "TCGPlayer / eBay median",
-    psa10Population: "N/A",
-    populationTrend: "N/A",
-    priceTrend6mo: "Down ~20-30% from early Oct highs of $145-160; stabilizing near $110-120",
-    notes: "High sales volume (thousands/month). Still ~2.4x MSRP. Oversupplied relative to launch but liquid."
+    ticker: "AVGO",
+    type: "STOCK",
+    price: "331.98",
+    quantMetrics: "+3.91% 1D, beta 1.50, high volume",
+    analystRating: "Strong Buy (PT 514)",
+    earningsDate: "2026-12-??",
+    thesis: "AI infrastructure demand, strong EPS beat history, significant upside to consensus PT",
+    risk: "Valuation premium, semiconductor cycle",
+    allocationSuggestion: "Core holding 5-8%"
   },
   {
-    card: "30th Celebration Pokémon Center Elite Trainer Box",
-    type: "SEALED",
-    lastSoldPrice: "268.00",
-    soldDate: "2026-11-08",
-    source: "TCGPlayer market / TCGIndex",
-    psa10Population: "N/A",
-    populationTrend: "N/A",
-    priceTrend6mo: "Down from $300+ mid-Oct; ~4.5x MSRP still",
-    notes: "Premium exclusive. Lower volume than standard ETB. Holding better premium."
+    ticker: "LLY",
+    type: "STOCK",
+    price: "1432.29",
+    quantMetrics: "+1.44% 1D, +31% EPS surprise, low beta 0.45",
+    analystRating: "Buy (PT 1445)",
+    earningsDate: "Next Q",
+    thesis: "Obesity/GLP-1 leadership, massive earnings beat, defensive growth",
+    risk: "Competition, pricing pressure",
+    allocationSuggestion: "Growth 4-6%"
   },
   {
-    card: "Mew ex #152 Special Illustration Rare",
-    type: "SINGLE_PSA10",
-    lastSoldPrice: "1157",
-    soldDate: "2026-11-05",
-    source: "SlabPing / eBay solds",
-    psa10Population: "333",
-    populationTrend: "Rapidly rising (from ~50 mid-Oct)",
-    priceTrend6mo: "Down sharply ~30-40% as supply hits market",
-    notes: "Top chase. High gem rate ~90%. Oversupplied in PSA 10; price pressure continues."
+    ticker: "AMD",
+    type: "STOCK",
+    price: "515.21",
+    quantMetrics: "+1.30% 1D, +7.18% EPS surprise, beta 2.49",
+    analystRating: "Buy (PT 652)",
+    earningsDate: "Recent",
+    thesis: "AI GPU share gains, data center momentum",
+    risk: "High beta, competition from NVDA",
+    allocationSuggestion: "Satellite 2-4%"
   },
   {
-    card: "Gengar ex #154 Special Illustration Rare",
-    type: "SINGLE_PSA10",
-    lastSoldPrice: "906",
-    soldDate: "2026-11-07",
-    source: "SlabPing / eBay",
-    psa10Population: "~40+",
-    populationTrend: "Rising",
-    priceTrend6mo: "Down ~25%+ from early peaks",
-    notes: "Strong demand but pop increasing. Still premium."
+    ticker: "MU",
+    type: "STOCK",
+    price: "725.11",
+    quantMetrics: "-1.10% 1D, huge PT upside to 1589, beta 2.37",
+    analystRating: "Strong Buy",
+    earningsDate: "Recent",
+    thesis: "Memory pricing cycle recovery, AI demand",
+    risk: "Cyclical, high volatility",
+    allocationSuggestion: "Tactical 1-3%"
   },
   {
-    card: "Mew ex #158 Futuristic Rare",
-    type: "SINGLE_PSA10",
-    lastSoldPrice: "400",
-    soldDate: "2026-11-07",
-    source: "Cardboard Terminal / eBay",
-    psa10Population: "477",
-    populationTrend: "Very high and rising fast",
-    priceTrend6mo: "Down ~20%",
-    notes: "High volume graded. Oversupplied relative to other chases."
+    ticker: "PLTR",
+    type: "STOCK",
+    price: "168.82",
+    quantMetrics: "+8.35% EPS surprise, beta 1.62",
+    analystRating: "Buy (PT 220)",
+    earningsDate: "Recent",
+    thesis: "Commercial + government AI software growth",
+    risk: "Valuation, execution",
+    allocationSuggestion: "Growth 2-3%"
   },
   {
-    card: "Pikachu ex #150",
-    type: "SINGLE_PSA10",
-    lastSoldPrice: "452",
-    soldDate: "2026-11-06",
-    source: "SlabPing",
-    psa10Population: "~25+",
-    populationTrend: "Rising",
-    priceTrend6mo: "Down ~20%",
-    notes: "Popular but more supply coming."
+    ticker: "NVDA",
+    type: "OPTIONS",
+    price: "168.89",
+    quantMetrics: "-5.47% 1D, high vol, beta 2.22",
+    analystRating: "Strong Buy (PT 340)",
+    earningsDate: "Next",
+    thesis: "AI leader but recent pullback; consider call spreads on dips",
+    risk: "Extreme volatility, valuation",
+    allocationSuggestion: "Options 0.5-1% risk"
+  },
+  {
+    ticker: "INTC",
+    type: "OPTIONS",
+    price: "58.13",
+    quantMetrics: "+27.9% EPS surprise, beta 2.42, turnaround",
+    analystRating: "Hold/Buy (PT 113)",
+    earningsDate: "Recent",
+    thesis: "Foundry + PC recovery; long calls or call spreads",
+    risk: "Execution risk, high beta",
+    allocationSuggestion: "Speculative options 0.5%"
+  },
+  {
+    ticker: "MSFT",
+    type: "STOCK",
+    price: "533.16",
+    quantMetrics: "-2.20% 1D, solid EPS, PT 612",
+    analystRating: "Strong Buy",
+    earningsDate: "Recent",
+    thesis: "Cloud/AI durable growth, defensive mega-cap",
+    risk: "Competition, multiple compression",
+    allocationSuggestion: "Core 6-10%"
+  },
+  {
+    ticker: "AAPL",
+    type: "STOCK",
+    price: "348.51",
+    quantMetrics: "Stable, modest upside to PT",
+    analystRating: "Buy",
+    earningsDate: "Recent",
+    thesis: "Services + ecosystem, buyback support",
+    risk: "China, hardware cycle",
+    allocationSuggestion: "Core 5-8%"
+  },
+  {
+    ticker: "PANW",
+    type: "OPTIONS",
+    price: "326.36",
+    quantMetrics: "Cybersecurity demand, PT 400",
+    analystRating: "Buy",
+    earningsDate: "Next",
+    thesis: "Platform growth; consider bull call spreads",
+    risk: "Valuation, competition",
+    allocationSuggestion: "Options 0.5-1%"
   }
 ];
 
 export const pipeReport = [
-  "30th Celebration Elite Trainer Box (standard) / SEALED / 119.00 / 2026-11-06 / TCGPlayer / eBay median / N/A / N/A / Down ~20-30% from early Oct highs of $145-160; stabilizing near $110-120 / High sales volume (thousands/month). Still ~2.4x MSRP. Oversupplied relative to launch but liquid.",
-  "30th Celebration Pokémon Center Elite Trainer Box / SEALED / 268.00 / 2026-11-08 / TCGPlayer market / TCGIndex / N/A / N/A / Down from $300+ mid-Oct; ~4.5x MSRP still / Premium exclusive. Lower volume than standard ETB. Holding better premium.",
-  "Mew ex #152 Special Illustration Rare / SINGLE_PSA10 / 1157 / 2026-11-05 / SlabPing / eBay solds / 333 / Rapidly rising (from ~50 mid-Oct) / Down sharply ~30-40% as supply hits market / Top chase. High gem rate ~90%. Oversupplied in PSA 10; price pressure continues.",
-  "Gengar ex #154 Special Illustration Rare / SINGLE_PSA10 / 906 / 2026-11-07 / SlabPing / eBay / ~40+ / Rising / Down ~25%+ from early peaks / Strong demand but pop increasing. Still premium.",
-  "Mew ex #158 Futuristic Rare / SINGLE_PSA10 / 400 / 2026-11-07 / Cardboard Terminal / eBay / 477 / Very high and rising fast / Down ~20% / High volume graded. Oversupplied relative to other chases.",
-  "Pikachu ex #150 / SINGLE_PSA10 / 452 / 2026-11-06 / SlabPing / ~25+ / Rising / Down ~20% / Popular but more supply coming."
+  "AVGO / STOCK / 331.98 / +3.91% 1D beta 1.50 / Strong Buy PT 514 / TBD / AI infra demand strong EPS / Valuation cycle / Core 5-8%",
+  "LLY / STOCK / 1432.29 / +1.44% +31% EPS low beta / Buy PT 1445 / TBD / GLP-1 leadership / Competition / Growth 4-6%",
+  "AMD / STOCK / 515.21 / +1.30% +7% EPS beta 2.49 / Buy PT 652 / Recent / AI GPU gains / High beta / Satellite 2-4%",
+  "MU / STOCK / 725.11 / PT upside huge beta 2.37 / Strong Buy / Recent / Memory cycle AI / Cyclical / Tactical 1-3%",
+  "PLTR / STOCK / 168.82 / +8% EPS beta 1.62 / Buy PT 220 / Recent / AI software growth / Valuation / Growth 2-3%",
+  "NVDA / OPTIONS / 168.89 / -5.47% high vol beta 2.22 / Strong Buy PT 340 / Next / AI leader dip / Extreme vol / Options 0.5-1%",
+  "INTC / OPTIONS / 58.13 / +28% EPS beta 2.42 / Hold/Buy PT 113 / Recent / Turnaround / Execution / Spec 0.5%",
+  "MSFT / STOCK / 533.16 / solid PT 612 / Strong Buy / Recent / Cloud AI / Multiple / Core 6-10%",
+  "AAPL / STOCK / 348.51 / modest PT / Buy / Recent / Ecosystem / China / Core 5-8%",
+  "PANW / OPTIONS / 326.36 / cyber PT 400 / Buy / Next / Platform / Valuation / Options 0.5-1%"
 ];
 
-// SUMMARY: Standard and PC ETBs stabilizing after post-launch decline (still premium to MSRP); graded chase singles (esp. Mew ex SIR/FR) oversupplied as PSA 10 populations surge, driving 20-40% price drops.
+// SUMMARY: Strongest stock candidates AVGO, LLY, AMD, MSFT on growth + analyst support. Riskiest options trades NVDA, INTC, MU (high beta/vol).
