@@ -1,19 +1,19 @@
 // Weekly stock & options research snapshot.
-// Source: Manual research (Notion Stock & Options Scout agent blocked by Business plan entitlement), week of 2026-11-11.
+// Source: Manual research (Notion Stock & Options Scout agent blocked by Business plan entitlement), week of 2026-11-18.
 // No card-ledger repo exists; written to 6c4mb2j78p-source/wax-desk as the fallback data file.
 // Replaces the prior week's data.
-// Prices and metrics from Bigdata.com as of 2026-11-11. Research only, not advice. Verify live quotes and do your own due diligence.
+// Prices and metrics from Bigdata.com as of 2026-11-17/18. Research only, not advice. Verify live quotes and do your own due diligence.
 
-export const researchWeek = "2026-11-11";
-export const asOf = "2026-11-11";
+export const researchWeek = "2026-11-18";
+export const asOf = "2026-11-18";
 
 export const stockOptionsRows = [
   {
     ticker: "AVGO",
     type: "STOCK",
-    price: "331.98",
-    quantMetrics: "+3.91% 1D, beta 1.50, high volume",
-    analystRating: "Strong Buy (PT 514)",
+    price: "341.60",
+    quantMetrics: "+2.46% 1D, beta 1.51, high volume",
+    analystRating: "Strong Buy (PT 513)",
     earningsDate: "2026-12-??",
     thesis: "AI infrastructure demand, strong EPS beat history, significant upside to consensus PT",
     risk: "Valuation premium, semiconductor cycle",
@@ -22,10 +22,10 @@ export const stockOptionsRows = [
   {
     ticker: "LLY",
     type: "STOCK",
-    price: "1432.29",
-    quantMetrics: "+1.44% 1D, +31% EPS surprise, low beta 0.45",
-    analystRating: "Buy (PT 1445)",
-    earningsDate: "Next Q",
+    price: "1415.55",
+    quantMetrics: "-1.13% 1D, +31% EPS surprise, low beta 0.45",
+    analystRating: "Buy (PT 1442)",
+    earningsDate: "Recent (Q3)",
     thesis: "Obesity/GLP-1 leadership, massive earnings beat, defensive growth",
     risk: "Competition, pricing pressure",
     allocationSuggestion: "Growth 4-6%"
@@ -33,9 +33,9 @@ export const stockOptionsRows = [
   {
     ticker: "AMD",
     type: "STOCK",
-    price: "515.21",
-    quantMetrics: "+1.30% 1D, +7.18% EPS surprise, beta 2.49",
-    analystRating: "Buy (PT 652)",
+    price: "503.41",
+    quantMetrics: "-0.17% 1D, +7.18% EPS surprise, beta 2.49",
+    analystRating: "Buy (PT 659)",
     earningsDate: "Recent",
     thesis: "AI GPU share gains, data center momentum",
     risk: "High beta, competition from NVDA",
@@ -44,8 +44,8 @@ export const stockOptionsRows = [
   {
     ticker: "MU",
     type: "STOCK",
-    price: "725.11",
-    quantMetrics: "-1.10% 1D, huge PT upside to 1589, beta 2.37",
+    price: "712.42",
+    quantMetrics: "-0.92% 1D, huge PT upside to 1589, beta 2.37",
     analystRating: "Strong Buy",
     earningsDate: "Recent",
     thesis: "Memory pricing cycle recovery, AI demand",
@@ -53,43 +53,43 @@ export const stockOptionsRows = [
     allocationSuggestion: "Tactical 1-3%"
   },
   {
-    ticker: "PLTR",
+    ticker: "ABBV",
     type: "STOCK",
-    price: "168.82",
-    quantMetrics: "+8.35% EPS surprise, beta 1.62",
-    analystRating: "Buy (PT 220)",
+    price: "292.86",
+    quantMetrics: "-0.57% 1D, +2.41% EPS, positive sentiment 0.52",
+    analystRating: "Buy (PT 314)",
     earningsDate: "Recent",
-    thesis: "Commercial + government AI software growth",
-    risk: "Valuation, execution",
-    allocationSuggestion: "Growth 2-3%"
+    thesis: "Stable pharma growth, strong sentiment, dividend support",
+    risk: "Patent cliffs, competition",
+    allocationSuggestion: "Defensive 3-5%"
   },
   {
     ticker: "NVDA",
     type: "OPTIONS",
-    price: "168.89",
-    quantMetrics: "-5.47% 1D, high vol, beta 2.22",
-    analystRating: "Strong Buy (PT 340)",
-    earningsDate: "Next",
+    price: "155.46",
+    quantMetrics: "-0.44% 1D, high vol, beta 2.22, PT 292",
+    analystRating: "Strong Buy (PT 292)",
+    earningsDate: "Recent (Q3)",
     thesis: "AI leader but recent pullback; consider call spreads on dips",
     risk: "Extreme volatility, valuation",
     allocationSuggestion: "Options 0.5-1% risk"
   },
   {
-    ticker: "INTC",
+    ticker: "PLTR",
     type: "OPTIONS",
-    price: "58.13",
-    quantMetrics: "+27.9% EPS surprise, beta 2.42, turnaround",
-    analystRating: "Hold/Buy (PT 113)",
+    price: "156.56",
+    quantMetrics: "-2.39% 1D, +8.35% EPS surprise, beta 1.62",
+    analystRating: "Buy (PT 224)",
     earningsDate: "Recent",
-    thesis: "Foundry + PC recovery; long calls or call spreads",
-    risk: "Execution risk, high beta",
+    thesis: "Commercial + government AI software growth; long calls or spreads",
+    risk: "Valuation, high beta",
     allocationSuggestion: "Speculative options 0.5%"
   },
   {
     ticker: "MSFT",
     type: "STOCK",
-    price: "533.16",
-    quantMetrics: "-2.20% 1D, solid EPS, PT 612",
+    price: "506.24",
+    quantMetrics: "-2.27% 1D, solid EPS, PT 615",
     analystRating: "Strong Buy",
     earningsDate: "Recent",
     thesis: "Cloud/AI durable growth, defensive mega-cap",
@@ -99,8 +99,8 @@ export const stockOptionsRows = [
   {
     ticker: "AAPL",
     type: "STOCK",
-    price: "348.51",
-    quantMetrics: "Stable, modest upside to PT",
+    price: "351.91",
+    quantMetrics: "-0.25% 1D, modest upside to PT 341",
     analystRating: "Buy",
     earningsDate: "Recent",
     thesis: "Services + ecosystem, buyback support",
@@ -108,29 +108,29 @@ export const stockOptionsRows = [
     allocationSuggestion: "Core 5-8%"
   },
   {
-    ticker: "PANW",
+    ticker: "INTC",
     type: "OPTIONS",
-    price: "326.36",
-    quantMetrics: "Cybersecurity demand, PT 400",
-    analystRating: "Buy",
-    earningsDate: "Next",
-    thesis: "Platform growth; consider bull call spreads",
-    risk: "Valuation, competition",
-    allocationSuggestion: "Options 0.5-1%"
+    price: "55.17",
+    quantMetrics: "high volume, beta 2.42, turnaround",
+    analystRating: "Hold/Buy",
+    earningsDate: "Recent",
+    thesis: "Foundry + PC recovery; long calls or call spreads",
+    risk: "Execution risk, high beta",
+    allocationSuggestion: "Speculative options 0.5%"
   }
 ];
 
 export const pipeReport = [
-  "AVGO / STOCK / 331.98 / +3.91% 1D beta 1.50 / Strong Buy PT 514 / TBD / AI infra demand strong EPS / Valuation cycle / Core 5-8%",
-  "LLY / STOCK / 1432.29 / +1.44% +31% EPS low beta / Buy PT 1445 / TBD / GLP-1 leadership / Competition / Growth 4-6%",
-  "AMD / STOCK / 515.21 / +1.30% +7% EPS beta 2.49 / Buy PT 652 / Recent / AI GPU gains / High beta / Satellite 2-4%",
-  "MU / STOCK / 725.11 / PT upside huge beta 2.37 / Strong Buy / Recent / Memory cycle AI / Cyclical / Tactical 1-3%",
-  "PLTR / STOCK / 168.82 / +8% EPS beta 1.62 / Buy PT 220 / Recent / AI software growth / Valuation / Growth 2-3%",
-  "NVDA / OPTIONS / 168.89 / -5.47% high vol beta 2.22 / Strong Buy PT 340 / Next / AI leader dip / Extreme vol / Options 0.5-1%",
-  "INTC / OPTIONS / 58.13 / +28% EPS beta 2.42 / Hold/Buy PT 113 / Recent / Turnaround / Execution / Spec 0.5%",
-  "MSFT / STOCK / 533.16 / solid PT 612 / Strong Buy / Recent / Cloud AI / Multiple / Core 6-10%",
-  "AAPL / STOCK / 348.51 / modest PT / Buy / Recent / Ecosystem / China / Core 5-8%",
-  "PANW / OPTIONS / 326.36 / cyber PT 400 / Buy / Next / Platform / Valuation / Options 0.5-1%"
+  "AVGO / STOCK / 341.60 / +2.46% 1D beta 1.51 / Strong Buy PT 513 / TBD / AI infra demand strong EPS / Valuation cycle / Core 5-8%",
+  "LLY / STOCK / 1415.55 / -1.13% +31% EPS low beta / Buy PT 1442 / Recent / GLP-1 leadership / Competition / Growth 4-6%",
+  "AMD / STOCK / 503.41 / -0.17% +7% EPS beta 2.49 / Buy PT 659 / Recent / AI GPU gains / High beta / Satellite 2-4%",
+  "MU / STOCK / 712.42 / PT upside huge beta 2.37 / Strong Buy / Recent / Memory cycle AI / Cyclical / Tactical 1-3%",
+  "ABBV / STOCK / 292.86 / +2.41% EPS positive sentiment / Buy PT 314 / Recent / Stable pharma / Patent / Defensive 3-5%",
+  "NVDA / OPTIONS / 155.46 / -0.44% high vol beta 2.22 / Strong Buy PT 292 / Recent / AI leader dip / Extreme vol / Options 0.5-1%",
+  "PLTR / OPTIONS / 156.56 / -2.39% +8% EPS beta 1.62 / Buy PT 224 / Recent / AI software growth / Valuation / Spec 0.5%",
+  "MSFT / STOCK / 506.24 / solid PT 615 / Strong Buy / Recent / Cloud AI / Multiple / Core 6-10%",
+  "AAPL / STOCK / 351.91 / modest PT / Buy / Recent / Ecosystem / China / Core 5-8%",
+  "INTC / OPTIONS / 55.17 / high beta 2.42 / Hold/Buy / Recent / Turnaround / Execution / Spec 0.5%"
 ];
 
-// SUMMARY: Strongest stock candidates AVGO, LLY, AMD, MSFT on growth + analyst support. Riskiest options trades NVDA, INTC, MU (high beta/vol).
+// SUMMARY: Strongest stock candidates AVGO, LLY, AMD, MSFT on growth + analyst support. Riskiest options trades NVDA, PLTR, INTC, MU (high beta/vol).
